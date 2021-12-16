@@ -613,7 +613,7 @@ footer {
   content: "";
   width: inherit;
   height: 150px;
-  top: 10px;
+  top: 20px;
   left: 20%;
   background: url(../../assets/botdash.png) no-repeat center;
   background-size: 60%;
@@ -875,7 +875,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(../../arrow.png);
+    background-image: url(../../assets/arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
