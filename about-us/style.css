@@ -1,0 +1,39 @@
+/** Common background*/
+.common-bg {
+  background-image: url("../assets/aboutBG.png");
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+/** About contents*/
+#about-contents p {
+  font-size: 17px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0.6;
+}
+
+.rectangle {
+  max-width: 100%;
+  width: 80.1875rem;
+  height: 5.8125rem;
+  background-color: #fff;
+  border-radius: 4.5625rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-left {
+    max-width: 557px;
+  }
+  .about-right {
+    max-width: 570px;
+    padding-top: 283px;
+  }
+  .common-bg {
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+  }
+}
