@@ -614,7 +614,7 @@ footer {
   content: "";
   width: inherit;
   height: 150px;
-  top: 10px;
+  top: 20px;
   left: 20%;
   background: url(../assets/botdash.png) no-repeat center;
   background-size: 60%;
