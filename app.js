@@ -13,14 +13,19 @@ CloseBtn.addEventListener("click", () => {
 
 // manual image slide
 
-
 let cards = document.querySelectorAll(".card");
 let next = document.getElementById("next");
-let prev = document.getElementById("prev")
+let prev = document.getElementById("prev");
 
+// work on setting the left arrow.
 let left = 0;
 next.onclick = () => {
   left++;
+  // if (left > 0 && left === 2) {
+  //   next.onclick = "null";
+  //   next.style.backgroundImage = "url(./assets/backSwitch.png)";
+  //   next.style.transform = "rotate(-180deg)";
+  // }
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
@@ -37,12 +42,17 @@ next.onclick = () => {
     if (left > 2) {
       left = 0;
     }
-   
   });
 };
 
+// work to do here.
 prev.onclick = () => {
   left--;
+  // if (left > 0) {
+  //   //  prev.onclick = "null";
+  //   prev.style.backgroundImage = "url(./assets/forwardSwitch.png)";
+  //   prev.style.transform = "rotate(-180deg)";
+  // }
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
@@ -100,14 +110,57 @@ function checkPosition() {
 window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
 
-//topbar scroll
-// const navBar = document.getElementsByTagName("nav");
-// navBar[0].style.maxWidth = "1440px";
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY === 0) {
-//     navBar[0].style.backgroundColor = "";
-//   } else {
-//     navBar[0].style.backgroundColor = "#fff";
-//     navBar[0].style.width = "unset";
-//   }
-// });
+
+// switching users
+
+// const user = document.querySelector('.users')
+const avatars = document.querySelectorAll(".avatar");
+let mainComment = document.querySelector(".main-comment h2");
+const comments = [
+  "I came to the platform with a heavy heart, but the councellors are \
+    caring and loving, i dismissed my suicide though at once, Thank you \
+    ZeroDepression Team",
+
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. \
+  Voluptates sequi eius reprehenderit similique \
+  exercitationem error dolor fugit voluptatum deleniti ex.",
+
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Esse facilis quidem similique alias molestias aperiam.",
+];
+
+avatars.forEach((avatar) => {
+  avatar.addEventListener("click", (e) => {
+    avatars.forEach((avatar) => {
+      avatar.classList.remove("active-user");
+    });
+    e.currentTarget.classList.add("active-user");
+    let id = parseInt(e.currentTarget.getAttribute("data-user"))
+
+      mainComment.textContent = comments[id]
+    
+  });
+});
+
+// send
+
+const send = document.getElementById("send")
+send.addEventListener("click", ()=> {
+  window.location.href = "../contact-us/index.html";
+})
+
+
+// animate logos
+const logos = document.querySelector(".supporters-logo");
+let nums = 0
+
+// setInterval(()=> {
+// nums++
+// console.log(nums)
+// // if(nums % 5){
+// //  logos.style.left = "300px"
+// // }
+// // else{
+// //   logos.style.left = "0"
+// // }
+
+// }, 1000)

@@ -12,7 +12,7 @@
   <body>
     <!-- side menu -->
 
-    <header class="trim-header">
+    <header>
       <!-- main menu -->
       <nav>
         <div class="logo">
@@ -22,6 +22,7 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about-us/index.html">About Us</a></li>
           <li><a href="./" class="active">Contact Us</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
         </ul>
         <button id="talk">Talk with a Councillor</button>
         <!-- hamburger -->
@@ -42,7 +43,7 @@
           <div class="content-row">
             <div class="con-col-6 contact-left">
               <div class="core-features">
-                you can be our <span>Super Hero</span>
+                <p> you can be our <span>Super Hero</span></p>
               </div>
               <div class="jackpot">Drop your contributions/offers below</div>
               <div class="message-form">
@@ -80,16 +81,15 @@
             <div class="con-col-6 contact-right"></div>
           </div>
         </div>
-<!--         <div class="rectangle con-container"></div> -->
       </section>
     </header>
     <!-- side Nav -->
     <div class="sideNav" id="sideMenu">
       <a href="#" id="closeBtn">&times;</a>
       <a href="../index.html">Home</a>
-      <!-- <a href="../Homepage/index.html">Home</a> -->
       <a href="../about-us/index.html">About Us</a>
       <a href="./">Contact Us</a>
+      <a href="/blog/index.html">Blog</a>
       <a href="../chatFlow1/index.html">Talk with a Councillor</a>
     </div>
 
@@ -108,21 +108,21 @@
         </h2>
       </div>
       <div class="users">
-        <div class="avatar active-user">
+        <div class="avatar active-user" data-user="0">
           <img src="./assets/pierre.png" alt="face" />
           <div class="avatar-body">
             <h4>Pierre Hackett</h4>
             <p>Student</p>
           </div>
         </div>
-        <div class="avatar">
+        <div class="avatar" data-user="1">
           <img src="./assets/nat.png" alt="face" />
           <div class="avatar-body">
             <h4>Natalia Sanz</h4>
             <p>A worker</p>
           </div>
         </div>
-        <div class="avatar">
+        <div class="avatar" data-user="2">
           <img src="./assets/ece.png" alt="face" />
           <div class="avatar-body">
             <h4>Ece Akman</h4>
@@ -188,7 +188,41 @@
             </p>
           </div>
         </div>
+        <!-- card start -->
+        <div class="card">
+          <div class="card_1">
+            <img
+              src="./assets/stefan-stefancik-5p_7M5MP2Iw-unsplash.png"
+              alt="woman with a child"
+            />
+          </div>
+          <div class="card-body">
+            <h3>James Brown</h3>
+            <p>
+              James Brown is a professional councillor for the university of
+              texas
+            </p>
+          </div>
+        </div>
+        <!-- card start -->
+        <div class="card">
+          <div class="card_2">
+            <img
+              src="./assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.png"
+              alt="a man with sunglasses"
+            />
+          </div>
+          <div class="card-body">
+            <h3>James Kate</h3>
+            <p>
+              James Brown is a professional councillor for the university of
+              texas
+            </p>
+          </div>
+        </div>
       </div>
+
+      <!--switch button  -->
       <div class="switch">
         <button id="prev"></button>
         <button id="next"></button>
@@ -231,6 +265,7 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about-us/index.html">About</a></li>
           <li><a href="./">Contact</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
         </ul>
       </div>
     </footer>

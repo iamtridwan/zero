@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   
-
     <header>
       <!-- main menu -->
       <nav>
@@ -21,6 +19,7 @@
           <li><a href="./index.html" class="active">Home</a></li>
           <li><a href="../about-us/index.html">About Us</a></li>
           <li><a href="../contact-us/index.html">Contact Us</a></li>
+          <li><a href="./blog/index.html">blog</a></li>
         </ul>
         <button id="talk">Talk with a Councillor</button>
         <!-- hamburger -->
@@ -57,6 +56,7 @@
       <a href="./index.html">Home</a>
       <a href="../about-us/index.html">About Us</a>
       <a href="../contact-us/index.html">Contact Us</a>
+      <a href="./blog/index.html">Blog</a>
       <a href="../chatFlow1/index.html">Talk with a Councillor</a>
     </div>
     <!-- features -->
@@ -134,6 +134,10 @@
             <p>Support with funds</p>
           </li>
         </div>
+        <button id="send">
+          <p>Send Us A Message</p>
+          <img src="./assets/gt.png" alt="arrow right" />
+        </button>
       </div>
     </section>
 
@@ -152,21 +156,21 @@
         </h2>
       </div>
       <div class="users">
-        <div class="avatar active-user">
+        <div class="avatar active-user" data-user = "0">
           <img src="./assets/pierre.png" alt="face" />
           <div class="avatar-body">
             <h4>Pierre Hackett</h4>
             <p>Student</p>
           </div>
         </div>
-        <div class="avatar">
+        <div class="avatar" data-user = "1">
           <img src="./assets/nat.png" alt="face" />
           <div class="avatar-body">
             <h4>Natalia Sanz</h4>
             <p>A worker</p>
           </div>
         </div>
-        <div class="avatar">
+        <div class="avatar" data-user = "2">
           <img src="./assets/ece.png" alt="face" />
           <div class="avatar-body">
             <h4>Ece Akman</h4>
@@ -216,7 +220,7 @@
           </div>
         </div>
         <!-- card start -->
-        <div class="card ">
+        <div class="card">
           <div class="card_3">
             <img
               src="./assets/corinne-kutz-tMI2_-r5Nfo-unsplash.png"
@@ -232,7 +236,41 @@
             </p>
           </div>
         </div>
+        <!-- card start -->
+        <div class="card">
+          <div class="card_1">
+            <img
+              src="./assets/stefan-stefancik-5p_7M5MP2Iw-unsplash.png"
+              alt="woman with a child"
+            />
+          </div>
+          <div class="card-body">
+            <h3>James Brown</h3>
+            <p>
+              James Brown is a professional councillor for the university of
+              texas
+            </p>
+          </div>
+        </div>
+        <!-- card start -->
+        <div class="card">
+          <div class="card_2">
+            <img
+              src="./assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.png"
+              alt="a man with sunglasses"
+            />
+          </div>
+          <div class="card-body">
+            <h3>James Kate</h3>
+            <p>
+              James Brown is a professional councillor for the university of
+              texas
+            </p>
+          </div>
+        </div>
       </div>
+      
+      <!-- switch buttons  -->
       <div class="switch">
         <button id="prev"></button>
         <button id="next"></button>
@@ -263,15 +301,16 @@
         <button>Talk with a councillor</button>
       </div>
       <div class="foot-nav">
-          <div class="logo">
-            <h3>Zero<span>Depression</span></h3>
-            <p>Copyright by <span id="year"></span> ZeroDepression</p>
-          </div>
-          
+        <div class="logo">
+          <h3>Zero<span>Depression</span></h3>
+          <p>Copyright by <span id="year"></span> ZeroDepression</p>
+        </div>
+
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="../about-us/index.html">About</a></li>
           <li><a href="../contact-us/index.html">Contact</a></li>
+          <li><a href="./blog/index.html">Blog</a></li>
         </ul>
       </div>
     </footer>

@@ -13,8 +13,12 @@
   font-style: normal;
   font-weight: normal;
   opacity: 0.6;
+  width: 100%;
 }
 
+#about-contents h2 {
+  text-align: left;
+}
 .rectangle {
   max-width: 100%;
   width: 80.1875rem;
@@ -24,16 +28,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about-left {
-    max-width: 557px;
-  }
+  .about-left,
   .about-right {
-    max-width: 570px;
-    padding-top: 283px;
+    width: 600px;
   }
+  
   .common-bg {
     background-size: contain;
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
   }
 }

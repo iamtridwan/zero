@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=DM+Sans:ital,wght@0,700;1,400&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=DM+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
 
 /* utils */
 :root {
@@ -244,10 +244,14 @@ main h1 {
   background: var(--white);
   margin-top: 61px;
   padding: 23px 41px;
-  box-shadow: 8px 6px 20px rgb(167, 165, 165);
+  box-shadow: 8px 6px 20px rgb(223, 222, 222);
   border-radius: 4px;
   margin-bottom: 66px;
+  /*  */
 }
+/* .appear{
+animation: appear 1.8s ease-in 1s infinite;
+} */
 
 .warn h4 {
   color: var(--pry-color);
@@ -264,7 +268,7 @@ main h1 {
 .talk {
   margin-top: 42px;
   margin-bottom: 97px;
-  box-shadow: 10px 6px 20px rgb(167, 165, 165);
+  box-shadow: 10px 6px 20px rgb(223, 222, 222);
   width: 100%;
   height: fit-content;
   border-radius: 4px;
@@ -324,7 +328,7 @@ button:hover {
 #call {
   background-color: var(--white);
   color: var(--pry-color);
-  box-shadow: 10px 6px 20px rgb(167, 165, 165);
+  box-shadow: 10px 6px 20px rgb(223, 222, 222);
 }
 
 /* note */
@@ -414,17 +418,38 @@ button:hover {
   header nav .logo h4 {
     font-size: 25px;
   }
+
+  header nav .logo {
+    width: 15%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+  }
+
+   /* header nav .logo img {
+    width: 90%;
+    height: 90%;
+  } */
+
   nav {
     padding: 10px 40px;
     width: 88%;
     margin: 0 auto;
   }
+
+
   ul {
     display: flex;
     padding: 0;
-    width: 42%;
+    margin: 0;
+    align-items: center;
     justify-content: space-between;
   }
+
+   ul li {
+    margin: 0 20px;
+  }
+
 
   ul li a {
     text-decoration: none;
@@ -454,6 +479,7 @@ button:hover {
     width: 192px;
     border-radius: 5px;
     font-weight: 500;
+    margin: 0;
   }
 
 
@@ -461,7 +487,7 @@ button:hover {
 
   main {
     width: 88%;
-    padding: 60px 40px;
+    padding: 50px 40px;
   }
   main h1 {
     font-size: 72px;
@@ -580,3 +606,14 @@ button:hover {
     transform: translateX(0);
   }
 }
+
+/* @keyframes appear {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+} */

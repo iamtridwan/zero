@@ -107,3 +107,32 @@ buttons.forEach((btn) => {
 footerBtn.addEventListener("click", () => {
   window.location.href = "../chatFlow1/index.html";
 });
+// switching users
+
+// const user = document.querySelector('.users')
+const avatars = document.querySelectorAll(".avatar");
+let mainComment = document.querySelector(".main-comment h2");
+const comments = [
+  "I came to the platform with a heavy heart, but the councellors are \
+    caring and loving, i dismissed my suicide though at once, Thank you \
+    ZeroDepression Team",
+
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. \
+  Voluptates sequi eius reprehenderit similique \
+  exercitationem error dolor fugit voluptatum deleniti ex.",
+
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Esse facilis quidem similique alias molestias aperiam.",
+];
+
+avatars.forEach((avatar) => {
+  avatar.addEventListener("click", (e) => {
+    avatars.forEach((avatar) => {
+      avatar.classList.remove("active-user");
+    });
+    e.currentTarget.classList.add("active-user");
+    let id = parseInt(e.currentTarget.getAttribute("data-user"))
+
+      mainComment.textContent = comments[id]
+    
+  });
+});

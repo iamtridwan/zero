@@ -32,6 +32,15 @@ function checkPosition() {
 window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
 
+  // const articles = document.querySelectorAll("article")
+  // setTimeout(()=> {
+  //   let firstArticle = articles[0]
+  //   firstArticle.classList.remove("animate")
+  //   firstArticle.classList.remove("hidden")
+  //   firstArticle.classList.add("appear")
+  // }, 1000)
+
+
 // route to chat page
 
 let callBtn = document.getElementById("call");

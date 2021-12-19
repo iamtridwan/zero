@@ -19,6 +19,7 @@
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .content-row h2 {
@@ -54,6 +55,7 @@
     width: 60%;
     float: left;
   }
+  
 
   /* Centering the logo for tablets and desktop*/
   .content-row h2 {
@@ -72,4 +74,14 @@
     height: unset !important;
     width: unset !important;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .content-row {
+    padding-bottom: 30px;
+  }
+  .con-col-40 {
+    margin-top: 40px;
+  }
+  
 }
