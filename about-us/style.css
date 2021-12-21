@@ -15,6 +15,10 @@
   opacity: 0.6;
   width: 100%;
 }
+.banner-intro h1{
+  font-size: 2.2rem;
+ 
+}
 
 #about-contents h2 {
   text-align: left;
@@ -38,3 +42,14 @@
     background-position: center;
   }
 }
+
+@media (min-width:1024px){
+  .banner-intro h1{
+  font-size: 64px;
+}
+
+#dep{
+  font-weight: 400;
+}
+}
+

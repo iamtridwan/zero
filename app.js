@@ -110,7 +110,6 @@ function checkPosition() {
 window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
 
-
 // switching users
 
 // const user = document.querySelector('.users')
@@ -134,33 +133,17 @@ avatars.forEach((avatar) => {
       avatar.classList.remove("active-user");
     });
     e.currentTarget.classList.add("active-user");
-    let id = parseInt(e.currentTarget.getAttribute("data-user"))
+    let id = parseInt(e.currentTarget.getAttribute("data-user"));
 
-      mainComment.textContent = comments[id]
-    
+    mainComment.textContent = comments[id];
   });
 });
 
 // send
 
-const send = document.getElementById("send")
-send.addEventListener("click", ()=> {
+const send = document.getElementById("send");
+send.addEventListener("click", () => {
   window.location.href = "../contact-us/index.html";
-})
+});
 
 
-// animate logos
-const logos = document.querySelector(".supporters-logo");
-let nums = 0
-
-// setInterval(()=> {
-// nums++
-// console.log(nums)
-// // if(nums % 5){
-// //  logos.style.left = "300px"
-// // }
-// // else{
-// //   logos.style.left = "0"
-// // }
-
-// }, 1000)

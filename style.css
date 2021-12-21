@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=DM+Sans:ital,wght@0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=DM+Sans:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 /* utils */
 :root {
@@ -138,6 +138,7 @@ ul {
   margin: 20px auto;
   transition: 0.5s;
 }
+
 .banner-img img {
   width: 100%;
   height: 100%;
@@ -145,39 +146,46 @@ ul {
 }
 
 .banner-intro {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.banner-intro h1 {
+  font-size: 2.8rem;
 }
 
-.banner-intro h1 {
+#zero {
   color: var(--pry-color);
-  font-size: 2.2rem;
   font-weight: var(--w2);
   line-height: 0.9;
-  text-align: center;
+  display: block;
+  animation-name: leftside;
+  animation-timing-function: linear;
+  animation-duration: .6s;
+  animation-fill-mode: backwards;
 }
-.banner-intro h1 span {
+#dep {
   color: var(--sec-color);
-
-  font-weight: var(--w2);
+  display: block;
+  font-weight: var(--w1);
+  animation-name: rightside;
+  animation-timing-function: linear;
+  animation-duration: .6s;
+  animation-fill-mode: backwards;
 }
 .banner-intro p {
-  width: 90%;
-  margin: -10px auto 20px auto;
-  font-size: 18px;
+  width: 95%;
+  margin: 20px 0 40px 0;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 32px;
-  text-align: center;
   color: #343d48;
 }
 
 .banner-intro button {
   background-color: var(--pry-color);
   color: var(--white);
-  padding: 13px 19px;
+  padding: 15px;
   text-align: center;
-  width: 70%;
   border-radius: 4px;
   font-size: 16px;
   border: none;
@@ -339,7 +347,6 @@ ul {
   margin-top: 26px;
   font-size: 17px;
   text-align: left;
-
 }
 .support-info button {
   width: 60%;
@@ -365,7 +372,7 @@ ul {
   height: 5%;
 }
 .animate {
-  animation: slideInLeft 0.75s ease-in;
+  animation: slideInbottom .75s ease-in;
 }
 
 .support-means {
@@ -398,7 +405,7 @@ ul {
   margin: 40px auto;
 }
 .title {
-  margin-bottom: 58px;
+  margin-bottom: 18px;
 }
 
 .title p {
@@ -604,7 +611,7 @@ footer {
   color: var(--white);
 }
 .connect p {
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 35px;
@@ -620,7 +627,7 @@ footer {
   color: var(--pry-color);
   font-size: 17px;
   border: none;
-  padding: 19px 23px;
+  padding: 9px 13px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.1em;
@@ -643,7 +650,7 @@ footer {
   content: "";
   width: inherit;
   height: 150px;
-  top: 30px;
+  top: 12px;
   left: 20%;
   background: url(../assets/botdash.png) no-repeat center;
   background-size: 60%;
@@ -798,41 +805,40 @@ footer {
   }
 
   .banner-intro h1 {
-    line-height: 1.2;
-    margin: 0;
-    text-align: left;
     font-size: 64px;
     line-height: 73px;
   }
-  .banner-intro h1 span {
-    display: block;
+  #zero,
+  #dep {
+    margin: 0;
+    text-align: left;
+  }
+  #dep {
+    font-weight: 100;
   }
 
   .banner-intro p {
-    width: 85%;
+    width: 95%;
+    font-size: 18px;
     text-align: left;
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
   .banner-intro button {
-    width: 50%;
-    float: left;
     font-size: 20px;
     height: 65px;
     width: 263px;
-    left: 316px;
-    top: 599px;
     border-radius: 4px;
   }
 
   .banner-img {
-    height: 500px;
-    width: 558px;
+    height: 420px;
+    width: 458px;
   }
   .banner-img img {
     width: 100%;
     height: 100%;
-    margin: auto;
+    margin-left: auto;
   }
   .features {
     width: 88%;
@@ -861,9 +867,8 @@ footer {
   }
 
   .support-info p {
-  width: 80%;
-
-}
+    width: 80%;
+  }
 
   .support-info button {
     width: 48%;
@@ -885,8 +890,6 @@ footer {
     width: 850px;
     margin: 92px auto 40px auto;
   }
-
- 
 
   .main-comment h2 {
     line-height: 65px;
@@ -954,6 +957,7 @@ footer {
   }
 
   .connect p {
+    font-size: 30px;
     height: 111px;
     width: 626px;
     font-style: normal;
@@ -1034,14 +1038,26 @@ footer {
     letter-spacing: 0px;
     text-align: right;
   }
- 
 }
 
 /* animation */
-@keyframes slideInLeft {
+@keyframes slideInbottom {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes leftside {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
   }
 
   to {
@@ -1050,10 +1066,14 @@ footer {
   }
 }
 
-/** topBar */
-/* nav {
-  z-index: 9999;
-  position: sticky;
-  top: 0;
-  transition: ease-in-out 1.2s;
-} */
+@keyframes rightside {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
