@@ -373,7 +373,7 @@ ul {
   height: 5%;
 }
 .animate {
-  animation: slideInbottom 0.75s ease-in-out;
+  animation: slideInbottom 0.95s ease-in;
 }
 
 .support-means {
@@ -1084,6 +1084,7 @@ footer {
     height: 33px;
     width: 250px;
     padding: 0;
+    margin: 0;
   }
 
   .foot-nav ul li {
@@ -1115,7 +1116,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width:25%;
+  width:20%;
   margin: 30px  auto;
 }
 }

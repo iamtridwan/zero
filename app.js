@@ -146,4 +146,8 @@ send.addEventListener("click", () => {
   window.location.href = "../contact-us/index.html";
 });
 
+const goto = document.getElementById("goto-blog");
 
+goto.addEventListener("click", () => {
+  window.location.href = "./blog/index.html";
+});

@@ -10,3 +10,12 @@ hamburger.addEventListener("click", () => {
 CloseBtn.addEventListener("click", () => {
   sideNav.style.width = "0px";
 });
+
+
+// route to flow1
+
+let buttons = document.querySelectorAll("button")
+
+buttons.forEach( btn => btn.addEventListener("click", () => {
+  window.location.href = "../chatFlow1/index.html"
+}))
