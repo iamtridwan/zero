@@ -52,7 +52,7 @@
 }
 
 .pagination a.active {
-  background-color: dodgerblue;
+  background-color: #ffa500;
   color: white;
 }
 
