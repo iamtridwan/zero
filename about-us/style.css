@@ -2,11 +2,16 @@
 .common-bg {
   background-image: url("../assets/aboutBG.webp");
   background-size: cover;
-  background-position-x: center;
+  background-position: 50% 50px;
   background-repeat: no-repeat;
+
 }
 
 /** About contents*/
+#about-contents{
+  margin-top: 30px ;
+ 
+}
 #about-contents p {
   font-size: 17px;
   line-height: 34px;
@@ -15,12 +20,11 @@
   opacity: 0.6;
   width: 100%;
 }
-.banner-intro h1{
+.banner-intro h1 {
   font-size: 2.2rem;
- 
 }
 
-strong{
+strong {
   font-weight: 700;
   text-transform: uppercase;
   color: red;
@@ -37,25 +41,29 @@ strong{
   border-radius: 4.5625rem;
 }
 
+.banner-intro{
+  margin-bottom: 0;
+}
+
+
 @media screen and (min-width: 1024px) {
   .about-left,
   .about-right {
     width: 600px;
   }
-  
+
   .common-bg {
     background-size: contain;
     background-position: center;
   }
 }
 
-@media (min-width:1024px){
-  .banner-intro h1{
-  font-size: 64px;
-}
+@media (min-width: 1024px) {
+  .banner-intro h1 {
+    font-size: 64px;
+  }
 
-#dep{
-  font-weight: 400;
+  #dep {
+    font-weight: 400;
+  }
 }
-}
-

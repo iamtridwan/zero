@@ -301,7 +301,6 @@ ul {
   font-weight: var(--w1);
   line-height: 30px;
   color: #343d48;
-  text-align: left;
   opacity: 0.8;
 }
 
@@ -341,7 +340,7 @@ ul {
 }
 .support-info h2 {
   color: var(--sec-color);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: var(--w2);
   margin: 0;
 }
@@ -383,7 +382,6 @@ ul {
   height: 5%;
 }
 
-
 .animate {
   animation: slideInbottom 0.95s ease-in;
 }
@@ -403,7 +401,6 @@ ul {
   color: var(--sec-color);
   font-size: 18px;
   margin: 0 0 0 10px;
-  opacity: 1;
 }
 
 .support-means li img {
@@ -431,10 +428,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .main-blog__img {
   padding: 0;
+  order: 1;
 }
 .main-blog__img img {
   width: 100%;
@@ -481,7 +480,7 @@ h4 {
 }
 .main-comment h2 {
   font-family: Playfair Display;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 45px;
@@ -535,6 +534,7 @@ h4 {
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
+  opacity: 0.6;
 }
 
 .active-user {
@@ -579,10 +579,12 @@ h4 {
 .card-body h3 {
   font-size: 17px;
   margin: 5px 0;
+  color: #02073e;
 }
 
 .card-body p {
   font-size: 14px;
+  opacity: 0.6;
 }
 img {
   width: 100%;
@@ -628,9 +630,8 @@ img {
   margin: 0 auto;
 }
 
-.supporters .title h4{
-  opacity: 0.6;
-}
+
+
 .sponsor-logo {
   height: 35px;
   width: 90%;
