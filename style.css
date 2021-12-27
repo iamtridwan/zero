@@ -227,7 +227,7 @@ ul {
 .features-icons {
   margin-top: 4vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
   column-gap: 20px;
   padding: 10px 0;
@@ -301,7 +301,10 @@ ul {
   font-weight: var(--w1);
   line-height: 30px;
   color: #343d48;
+  text-align: left;
+  opacity: 0.8;
 }
+
 /* supprt section  & main-blog section*/
 .support,
 .main-blog {

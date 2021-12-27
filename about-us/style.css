@@ -20,6 +20,12 @@
  
 }
 
+strong{
+  font-weight: 700;
+  text-transform: uppercase;
+  color: red;
+  opacity: 1 !important;
+}
 #about-contents h2 {
   text-align: left;
 }
