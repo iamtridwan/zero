@@ -179,6 +179,7 @@ ul {
   font-weight: lighter;
   line-height: 32px;
   color: #343d48;
+  opacity: 0.8;
 }
 
 .banner-intro button {
@@ -337,21 +338,26 @@ ul {
 }
 .support-info h2 {
   color: var(--sec-color);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: var(--w2);
   margin: 0;
 }
 .support-info p {
   color: var(--sec-color);
-  font-weight: var(--w1);
+  font-weight: 100;
   line-height: 25px;
   margin-top: 26px;
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
+}
+
+.support-info p:first-child() {
+  opacity: 0.6;
+  color: red;
 }
 .support-info button {
   width: 60%;
-  margin: 20px auto;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   border: none;
@@ -367,11 +373,14 @@ ul {
   text-align: left;
   color: var(--pry-color);
   margin: 0;
+  opacity: 1;
 }
 .support-info button img {
   width: 5%;
   height: 5%;
 }
+
+
 .animate {
   animation: slideInbottom 0.95s ease-in;
 }
@@ -391,6 +400,7 @@ ul {
   color: var(--sec-color);
   font-size: 18px;
   margin: 0 0 0 10px;
+  opacity: 1;
 }
 
 .support-means li img {
@@ -406,6 +416,12 @@ ul {
 }
 .main-blog .support-info {
   margin-top: 0px;
+}
+
+.support-info p {
+  font-weight: lighter;
+  font-size: 15px;
+  opacity: 0.6;
 }
 
 .main-blog .support-img {
@@ -471,6 +487,7 @@ h4 {
   color: #0f2137;
   text-align: center;
   margin: 0;
+  opacity: 0.8;
 }
 
 .users {
@@ -608,18 +625,48 @@ img {
   margin: 0 auto;
 }
 
-.supporters-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 1s;
+.supporters .title h4{
+  opacity: 0.6;
+}
+.sponsor-logo {
+  height: 35px;
+  width: 90%;
+  margin: 30px auto 10px auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.supporters-logo img {
-  width: 50%;
-  height: 50%;
-  margin: 20px auto;
+.sponsor {
+  position: absolute;
+  width: 200%;
+  height: 90%;
+  overflow: hidden;
+  animation: marquee 6s linear 1s infinite;
+}
+
+.sponsor span {
+  width: 20%;
+  height: inherit;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#one {
+  background-image: url(./assets/uber.png);
+}
+#two {
+  background-image: url(./assets/google.png);
+}
+#three {
+  background-image: url(./assets/paypal.png);
+}
+#four {
+  background-image: url(./assets/soft.png);
+}
+#five {
+  background-image: url(./assets/dribble.png);
 }
 
 /* footer */
@@ -738,24 +785,23 @@ footer {
   color: var(--pry-color);
 }
 
-
-.socials{
+.socials {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 70%;
-  margin: 30px  auto;
+  margin: 30px auto;
 }
 
-.socials a{
+.socials a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 18px;
 }
 
-.socials a img{
+.socials a img {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -852,10 +898,10 @@ footer {
   .banner-intro h1 {
     font-size: 64px;
     line-height: 73px;
+    margin: 0;
   }
   #zero,
   #dep {
-    margin: 0;
     text-align: left;
   }
   #dep {
@@ -902,37 +948,33 @@ footer {
     width: 555px;
   }
 
-  
-
   .support-info {
     text-align: left;
     height: 395px;
     width: 486px;
   }
 
-.main-blog{
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
+  .main-blog {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
 
   .main-blog__img {
     height: 513px;
     width: 554.73px;
   }
 
-
   .main-blog .support-info p {
     width: 90%;
   }
 
-  .main-blog .support-info button{
+  .main-blog .support-info button {
     width: 30%;
   }
-.main-blog .support-info button img{
+  .main-blog .support-info button img {
     width: 6%;
     height: 6%;
   }
-
 
   .support-info h4 {
     text-align: left;
@@ -1002,19 +1044,6 @@ footer {
     margin: 0 auto;
   }
 
-  .supporters-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .supporters-logo img {
-    width: 15%;
-    height: 15%;
-    margin: auto 20px;
-  }
-
   .connect {
     width: 85%;
     height: 200px;
@@ -1072,13 +1101,11 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin: -20px auto 30px auto;
-    
   }
   .foot-nav .logo {
     width: fit-content;
     margin-left: 0;
     flex-direction: row;
-    
   }
   .foot-nav ul {
     height: 33px;
@@ -1112,13 +1139,13 @@ footer {
     text-align: right;
   }
 
-  .socials{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width:20%;
-  margin: 30px  auto;
-}
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin: 30px auto;
+  }
 }
 
 /* animation */
@@ -1155,5 +1182,14 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -200%;
   }
 }

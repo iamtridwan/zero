@@ -151,3 +151,6 @@ const goto = document.getElementById("goto-blog");
 goto.addEventListener("click", () => {
   window.location.href = "./blog/index.html";
 });
+
+const sponsor = document.querySelector(".sponsor");
+console.log(sponsor.firstElementChild, sponsor.lastElementChild);
