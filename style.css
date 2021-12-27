@@ -337,6 +337,7 @@ ul {
   font-size: 18px;
   font-weight: var(--w2);
   margin: 0;
+  letter-spacing: -0.5px;
 }
 .support-info h2 {
   color: var(--sec-color);
@@ -359,7 +360,7 @@ ul {
 }
 .support-info button {
   width: 60%;
-  margin: 20px 0;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   border: none;
@@ -474,7 +475,7 @@ h4 {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 35px;
   letter-spacing: -0.5px;
   text-align: center;
 }
@@ -483,7 +484,7 @@ h4 {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 45px;
+  line-height:40px;
   letter-spacing: 0px;
   text-align: center;
   color: #0f2137;
@@ -911,7 +912,7 @@ footer {
   }
 
   .banner-intro p {
-    width: 95%;
+    width: 80%;
     font-size: 18px;
     text-align: left;
     margin: 40px 0;
@@ -966,6 +967,7 @@ footer {
   .main-blog__img {
     height: 513px;
     width: 554.73px;
+    order: 0;
   }
 
   .main-blog .support-info p {
@@ -1011,7 +1013,7 @@ footer {
   }
 
   .main-comment h2 {
-    line-height: 65px;
+    line-height: 45px;
   }
 
   .users {
@@ -1042,7 +1044,7 @@ footer {
   .title h4 {
     height: 100px;
     width: 607px;
-    line-height: 50px;
+    line-height: 40px;
   }
   .supporters {
     width: 800px;
