@@ -963,7 +963,7 @@ footer {
   .support-img {
     height: 483px;
     width: 455px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
   }
 
   .support-info {
@@ -971,6 +971,7 @@ footer {
     height: 395px;
     width: 486px;
     margin-right: -40px;
+    padding-top: 12vh;
    
   }
   .support-means li p {
