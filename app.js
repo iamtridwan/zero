@@ -26,6 +26,8 @@ next.onclick = () => {
   //   next.style.backgroundImage = "url(./assets/backSwitch.png)";
   //   next.style.transform = "rotate(-180deg)";
   // }
+    console.log(left);
+
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
@@ -34,12 +36,18 @@ next.onclick = () => {
       card.style.left = "-300px";
     }
     if (left === 2) {
-      card.style.left = "-620px";
+      card.style.left = "-600px";
     }
     if (left === 3) {
+      card.style.left = "-900px";
+    }
+    if (left === 4) {
+      card.style.left = "-1200px";
+    }
+    if (left === 5) {
       card.style.left = "-0px";
     }
-    if (left > 2) {
+    if (left > 5) {
       left = 0;
     }
   });
@@ -152,5 +160,27 @@ goto.addEventListener("click", () => {
   window.location.href = "./blog/index.html";
 });
 
-const sponsor = document.querySelector(".sponsor");
-console.log(sponsor.firstElementChild, sponsor.lastElementChild);
+
+
+// auto switch comments
+
+function switchComments(){
+  let count = 0
+  setInterval(() => {
+    if(count > 2){
+      count = 0
+    }
+    avatars.forEach((avatar, index) => {
+      avatar.classList.remove("active-user")
+      if(count === index){
+        avatar.classList.add("active-user")
+        mainComment.textContent = comments[index];
+      }
+    }),
+    count++
+  }, 2500)
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  switchComments()
+})

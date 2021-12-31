@@ -130,9 +130,31 @@ avatars.forEach((avatar) => {
       avatar.classList.remove("active-user");
     });
     e.currentTarget.classList.add("active-user");
-    let id = parseInt(e.currentTarget.getAttribute("data-user"))
+    let id = parseInt(e.currentTarget.getAttribute("data-user"));
 
-      mainComment.textContent = comments[id]
-    
+    mainComment.textContent = comments[id];
   });
+});
+
+// auto switch comments
+
+function switchComments() {
+  let count = 0;
+  setInterval(() => {
+    if (count > 2) {
+      count = 0;
+    }
+    avatars.forEach((avatar, index) => {
+      avatar.classList.remove("active-user");
+      if (count === index) {
+        avatar.classList.add("active-user");
+        mainComment.textContent = comments[index];
+      }
+    }),
+      count++;
+  }, 2500);
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  switchComments();
 });
