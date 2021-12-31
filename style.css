@@ -710,9 +710,9 @@ footer {
   margin: 80px auto 40px auto;
   background-color: var(--white);
   color: var(--pry-color);
-  font-size: 17px;
+  font-size: 15px;
   border: none;
-  padding: 9px 13px;
+  padding: 9px ;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.1em;
@@ -735,7 +735,7 @@ footer {
   content: "";
   width: inherit;
   height: 150px;
-  top: 12px;
+  top: -10px;
   left: 20%;
   background: url(../assets/botdash.png) no-repeat center;
   background-size: 60%;
