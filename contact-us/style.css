@@ -97,7 +97,7 @@
   padding: 20px 0 0 25px;
   margin-bottom: 40px;
   width: 100%;
-  height: 243px;
+  height: 183px;
   background: rgba(255, 165, 0, 0.5);
   border: 5px solid #ffffff;
   box-sizing: border-box;
@@ -114,7 +114,7 @@
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 650px;
+  height: 750px;
 }
 .banner-intro h1 {
   font-size: 2.2rem;
@@ -158,6 +158,7 @@
 
   .message-form > .input-group > input {
     width: 80%;
+    height: 50px;
   }
   .message-form > .input-group > textarea {
     margin-bottom: 10px;

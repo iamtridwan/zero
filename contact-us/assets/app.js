@@ -61,14 +61,9 @@ prev.onclick = () => {
 };
 
 // switching to flow1 page
-const buttons = document.querySelectorAll("header button");
 const footerBtn = document.querySelector(".connect button");
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    window.location.href = "../chatFlow1/index.html";
-  });
-});
+
 
 footerBtn.addEventListener("click", () => {
   window.location.href = "../chatFlow1/index.html";
@@ -98,17 +93,6 @@ function checkPosition() {
 window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
 
-//topbar scroll
-// const navBar = document.getElementsByTagName("nav");
-// navBar[0].style.maxWidth = "1440px";
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY === 0) {
-//     navBar[0].style.backgroundColor = "";
-//   } else {
-//     navBar[0].style.backgroundColor = "#fff";
-//     navBar[0].style.width = "unset";
-//   }
-// });
 // switching users
 
 // const user = document.querySelector('.users')
