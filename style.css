@@ -566,8 +566,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* scrollbar-width: none;
-  overflow-x: auto; */
+ 
 }
 
 .council-cards::-webkit-scrollbar {
@@ -579,15 +578,17 @@ h4 {
   background-color: var(--white);
   margin-right: 10px;
   padding-bottom: 15px;
-  /* transition: 1s; */
-  /* min-width: 300px; */
-  /* position: relative; */
-  /* left: 0; */
+ 
 }
 
 .card-body {
   background-color: var(--white);
   padding: 8px 12px;
+  margin-top: 0;
+  background: white;
+  margin-bottom: 30px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 .card-body p,
 .card-body h3 {

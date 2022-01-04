@@ -11,59 +11,14 @@ CloseBtn.addEventListener("click", () => {
   sideNav.style.width = "0px";
 });
 
-// manual image slide
-
-let cards = document.querySelectorAll(".card");
 let next = document.getElementById("next");
-let prev = document.getElementById("prev");
 
-let left = 0;
-next.onclick = () => {
-  left++;
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "-0px";
-    }
-    if (left > 2) {
-      left = 0;
-    }
-  });
-};
-
-prev.onclick = () => {
-  left--;
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "0px";
-    }
-    if (left < 0) {
-      left = 0;
-    }
-  });
-};
+next.addEventListener("click", () => {
+  window.location.href = "../gallery/gallery.html";
+});
 
 // switching to flow1 page
 const footerBtn = document.querySelector(".connect button");
-
-
 
 footerBtn.addEventListener("click", () => {
   window.location.href = "../chatFlow1/index.html";
@@ -122,26 +77,25 @@ avatars.forEach((avatar) => {
   });
 });
 
-
 // auto switch comments
 
-function switchComments(){
-  let count = 0
+function switchComments() {
+  let count = 0;
   setInterval(() => {
-    if(count > 2){
-      count = 0
+    if (count > 2) {
+      count = 0;
     }
     avatars.forEach((avatar, index) => {
-      avatar.classList.remove("active-user")
-      if(count === index){
-        avatar.classList.add("active-user")
+      avatar.classList.remove("active-user");
+      if (count === index) {
+        avatar.classList.add("active-user");
         mainComment.textContent = comments[index];
       }
     }),
-    count++
-  }, 2500)
+      count++;
+  }, 2500);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  switchComments()
-})
+  switchComments();
+});
