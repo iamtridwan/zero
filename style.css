@@ -575,7 +575,6 @@ h4 {
 
 .card {
   border-radius: 10px;
-  background-color: var(--white);
   margin-right: 10px;
   padding-bottom: 15px;
  
@@ -685,6 +684,8 @@ img {
 /* footer */
 footer {
   margin-top: 85px;
+  margin-bottom: 0;
+  background-color: var(--white);
 }
 .connect {
   padding: 10px 15px;
@@ -1140,7 +1141,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: -20px auto 30px auto;
+    margin: -20px auto 0 auto;
   }
   .foot-nav .logo {
     width: fit-content;

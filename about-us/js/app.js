@@ -12,52 +12,14 @@ CloseBtn.addEventListener("click", () => {
 });
 
 // manual image slide
-let cards = document.querySelectorAll(".card");
+
 let next = document.getElementById("next");
-let prev = document.getElementById("prev");
 
-let left = 0;
-next.onclick = () => {
-  left++;
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "-0px";
-    }
-    if (left > 2) {
-      left = 0;
-    }
-  });
-};
+next.addEventListener("click", () => {
+  window.location.href = "../gallery/gallery.html";
+});
 
-prev.onclick = () => {
-  left--;
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "0px";
-    }
-    if (left < 0) {
-      left = 0;
-    }
-  });
-};
+
 
 let date = new Date();
 year.textContent = date.getFullYear();
