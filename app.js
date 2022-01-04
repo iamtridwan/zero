@@ -13,8 +13,12 @@ CloseBtn.addEventListener("click", () => {
 
 // manual image slide
 
-let cards = document.querySelectorAll(".card");
-// let next = document.getElementById("next");
+// let cards = document.querySelectorAll(".card");
+let next = document.getElementById("next");
+next.addEventListener('click', ()=> {
+  window.location.href = './counsellor/index.html'
+})
+
 // let prev = document.getElementById("prev");
 
 // work on setting the left arrow.
