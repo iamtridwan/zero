@@ -564,9 +564,10 @@ h4 {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: left;
-  scrollbar-width: none;
-  overflow-x: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  /* scrollbar-width: none;
+  overflow-x: auto; */
 }
 
 .council-cards::-webkit-scrollbar {
@@ -578,10 +579,10 @@ h4 {
   background-color: var(--white);
   margin-right: 10px;
   padding-bottom: 15px;
-  transition: 1s;
-  min-width: 300px;
-  position: relative;
-  left: 0;
+  /* transition: 1s; */
+  /* min-width: 300px; */
+  /* position: relative; */
+  /* left: 0; */
 }
 
 .card-body {
@@ -611,11 +612,11 @@ img {
 
 /* switch btn */
 .switch {
-  width: 30%;
+  width: 80%;
   margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 5;
 }
 
@@ -625,14 +626,10 @@ img {
   cursor: pointer;
 }
 
-#prev {
-  background: url(./assets/backSwitch.png) no-repeat center;
-  background-size: 70%;
-}
 
 #next {
-  background: url(./assets/forwardSwitch.png) no-repeat center;
-  background-size: 90%;
+  background: url(./assets/galleryArr.png) no-repeat center;
+  background-size: 60%;
 }
 
 /* supporters */
@@ -966,15 +963,15 @@ footer {
   }
   .support-img {
     height: 483px;
-    width: 455px;
+    width: 355px;
   }
 
   .support-info {
     text-align: left;
     height: 395px;
     width: 486px;
-    margin-right: -40px;
-    padding-top: 12vh;
+    margin-right: -10px;
+    padding-top: 12vh; 
   }
   .support-means li p {
     margin: 0px 0 0 10px;
@@ -1058,20 +1055,23 @@ footer {
 
   .council-cards {
     width: 60%;
+    flex-direction: row;
     margin: 0 auto;
   }
-  .card {
-    min-width: 250px;
-  }
+ 
   .card-body {
     background-color: var(--white);
     padding: 18px 20px;
   }
 
   .switch {
-    width: 12%;
+    width: 18%;
     margin: 20px auto;
   }
+
+  #next {
+  background-size: 70%;
+}
 
   .title h4 {
     height: 100px;
