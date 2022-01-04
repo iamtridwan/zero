@@ -104,6 +104,34 @@ body{
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
+/* form */
+form{
+  margin: 20px 0 40px 0;
+  display: none;
+}
+textarea{
+  border: 1px solid #02073e;
+  color: #02073e;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 0;
+  display: block;
+  width: 40%;
+}
+
+input{
+  width: 20%;
+  display: block;
+  padding: 10px;
+  background-color: #ffa500;
+  color: #F6F8FB;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
 /* media query */
 @media screen and (min-width: 1024px) {
   .blog {

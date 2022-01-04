@@ -31,3 +31,21 @@ loveImg.addEventListener('click', ()=> {
   loveCount += 1
   countOfLove.textContent = loveCount
 })
+
+// clicking comment
+
+const commentImg = document.querySelector(".comment_img");
+const commentCount = document.querySelector(".comment p span");
+const form = document.querySelector('form')
+const submit = document.querySelector('input')
+
+commentImg.addEventListener('click', ()=> {
+  form.style.display = "block"
+})
+let comment_count = 0
+submit.addEventListener('click', (e)=> {
+  e.preventDefault()
+  form.style.display = "none"
+  comment_count+= 1
+  commentCount.textContent = comment_count
+})
