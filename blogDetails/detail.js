@@ -20,3 +20,14 @@ buttons.forEach((btn) =>
     window.location.href = "../chatFlow1/index.html";
   })
 );
+
+
+// clicking love img
+
+const loveImg = document.querySelector('.like-img')
+const countOfLove = document.querySelector('.like p span')
+let loveCount = 0
+loveImg.addEventListener('click', ()=> {
+  loveCount += 1
+  countOfLove.textContent = loveCount
+})
