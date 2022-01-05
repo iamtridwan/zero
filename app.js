@@ -11,78 +11,81 @@ CloseBtn.addEventListener("click", () => {
   sideNav.style.width = "0px";
 });
 
-// manual image slide
-
-// let cards = document.querySelectorAll(".card");
-let next = document.getElementById("next");
-next.addEventListener('click', ()=> {
+// switch to counsellors page
+let gotoGallery = document.getElementById("goto_gallery");
+gotoGallery.addEventListener('click', ()=> {
   window.location.href = './counsellor/index.html'
 })
 
-// let prev = document.getElementById("prev");
+// manual image slide
+
+let cards = document.querySelectorAll(".card");
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
+
 
 // work on setting the left arrow.
-// let left = 0;
-// next.onclick = () => {
-//   left++;
+let left = 0;
+next.onclick = () => {
+  left++;
   // if (left > 0 && left === 2) {
   //   next.onclick = "null";
   //   next.style.backgroundImage = "url(./assets/backSwitch.png)";
   //   next.style.transform = "rotate(-180deg)";
   // }
-    // console.log(left);
+  //   console.log(left);
 
-//   cards.forEach((card) => {
-//     if (left === 0) {
-//       card.style.left = "-0px";
-//     }
-//     if (left === 1) {
-//       card.style.left = "-300px";
-//     }
-//     if (left === 2) {
-//       card.style.left = "-600px";
-//     }
-//     if (left === 3) {
-//       card.style.left = "-900px";
-//     }
-//     if (left === 4) {
-//       card.style.left = "-1200px";
-//     }
-//     if (left === 5) {
-//       card.style.left = "-0px";
-//     }
-//     if (left > 5) {
-//       left = 0;
-//     }
-//   });
-// };
+  cards.forEach((card) => {
+    if (left === 0) {
+      card.style.left = "-0px";
+    }
+    if (left === 1) {
+      card.style.left = "-300px";
+    }
+    if (left === 2) {
+      card.style.left = "-600px";
+    }
+    if (left === 3) {
+      card.style.left = "-900px";
+    }
+    if (left === 4) {
+      card.style.left = "-1200px";
+    }
+    if (left === 5) {
+      card.style.left = "-0px";
+    }
+    if (left > 5) {
+      left = 0;
+    }
+  });
+};
 
 // work to do here.
-// prev.onclick = () => {
-//   left--;
+prev.onclick = () => {
+  left--;
   // if (left > 0) {
   //   //  prev.onclick = "null";
   //   prev.style.backgroundImage = "url(./assets/forwardSwitch.png)";
   //   prev.style.transform = "rotate(-180deg)";
   // }
-//   cards.forEach((card) => {
-//     if (left === 0) {
-//       card.style.left = "-0px";
-//     }
-//     if (left === 1) {
-//       card.style.left = "-300px";
-//     }
-//     if (left === 2) {
-//       card.style.left = "-620px";
-//     }
-//     if (left === 3) {
-//       card.style.left = "0px";
-//     }
-//     if (left < 0) {
-//       left = 0;
-//     }
-//   });
-// };
+  cards.forEach((card) => {
+    if (left === 0) {
+      card.style.left = "-0px";
+    }
+    if (left === 1) {
+      card.style.left = "-300px";
+    }
+    if (left === 2) {
+      card.style.left = "-620px";
+    }
+    if (left === 3) {
+      card.style.left = "0px";
+    }
+    if (left < 0) {
+      left = 0;
+    }
+  });
+};
 
 // switching to flow1 page
 const buttons = document.querySelectorAll("header button");

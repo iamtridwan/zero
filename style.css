@@ -564,20 +564,29 @@ h4 {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
- 
+  overflow-x: auto;
+  position: relative;
 }
 
 .council-cards::-webkit-scrollbar {
-  visibility: hidden;
+  display: none;
+}
+
+.council-cards {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .card {
   border-radius: 10px;
   margin-right: 10px;
+  min-width: 250px;
   padding-bottom: 15px;
- 
+  position: relative;
+  left: 0;
+  transition: left 1s;
 }
 
 .card-body {
@@ -611,7 +620,8 @@ img {
 }
 
 /* switch btn */
-.switch {
+.switch,
+.switch_goto {
   width: 80%;
   margin: 20px auto;
   display: flex;
@@ -620,25 +630,46 @@ img {
   z-index: 5;
 }
 
-.switch button {
+.switch button,
+.switch_goto button {
+  background: transparent;
   border: none;
-  /* padding: 25px; */
+  padding: 15px;
   cursor: pointer;
+  margin-right: 8px;
+  display: block;
 }
-
 
 #next {
-  background: transparent;
+  background-image: url(./assets/forwardSwitch.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#prev {
+  background-image: url(./assets/backSwitch.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.switch_goto button {
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+}
+#goto_gallery {
   display: flex;
   align-items: center;
- color: #02073e;
+  color: #02073e;
 }
 
-#next h2{
-  margin: 0 2px 0 0;
+#goto_gallery h3 {
+  margin: 0 8px 0 0;
 }
 
-#next img{
+#goto_gallery img {
   width: 30px;
   height: 15px;
 }
@@ -722,7 +753,7 @@ footer {
   color: var(--pry-color);
   font-size: 15px;
   border: none;
-  padding: 9px ;
+  padding: 9px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.1em;
@@ -984,7 +1015,7 @@ footer {
     height: 395px;
     width: 486px;
     margin-right: -10px;
-    padding-top: 12vh; 
+    padding-top: 12vh;
   }
   .support-means li p {
     margin: 0px 0 0 10px;
@@ -1071,21 +1102,28 @@ footer {
     flex-direction: row;
     margin: 0 auto;
   }
- 
+
+  .card {
+    min-width: 300px;
+  }
+
   .card-body {
     background-color: var(--white);
     padding: 18px 20px;
   }
 
   .switch {
-    width: 18%;
+    width: 28%;
     margin: 20px auto;
   }
 
   #next {
-  background-size: 70%;
-}
+    background-size: 100%;
+  }
 
+  #prev {
+    background-size: 80%;
+  }
   .title h4 {
     height: 100px;
     width: 607px;
@@ -1164,7 +1202,6 @@ footer {
     width: 350px;
     padding: 0;
     margin: 0;
-    
   }
 
   .foot-nav ul li {
@@ -1194,7 +1231,6 @@ footer {
 
   .socials {
     width: 15%;
-   
   }
 }
 
