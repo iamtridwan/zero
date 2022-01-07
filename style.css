@@ -23,10 +23,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
- 
 }
 
-p{
+p {
   font-weight: 100;
 }
 
@@ -594,7 +593,7 @@ h4 {
   left: 0;
   transition: left 1s;
 }
-.card img{
+.card img {
   border-radius: 5px 5px 0 0;
 }
 .card-body {
@@ -731,9 +730,40 @@ img {
   background-image: url(./assets/dribble.png);
 }
 
+/* subscibe */
+.subscribe {
+  margin: 150px auto 0 auto;
+  width: 90%;
+}
+
+.subscribe label {
+  font-size: 24px;
+  text-align: center;
+  color: var(--sec-color);
+}
+.subscribe .form-group {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.subscribe .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--pry-color);
+  border-radius: 10px;
+}
+
+.subscribe .form-group input[type="submit"] {
+  background-color: var(--pry-color);
+  color: var(--white);
+  font-size: 18px;
+}
+
 /* footer */
 footer {
-  margin-top: 85px;
+  margin-top: 55px;
   margin-bottom: 0;
   background-color: var(--white);
 }
@@ -1142,6 +1172,34 @@ footer {
     margin: 0 auto;
   }
 
+  /* subscibe */
+  .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .subscribe label {
+    text-align: left;
+  }
+  .subscribe .form-group {
+    margin-top: 0px;
+    width: 60%;
+    position: relative;
+    display: block;
+  }
+
+  .subscribe .form-group input {
+  padding: 16px 10px;
+}
+
+  .subscribe .form-group input[type="submit"] {
+    position: absolute;
+    top: 0.95px;
+    right: 0;
+    width: 35%;
+    padding: 12px;
+  }
   .connect {
     width: 85%;
     height: 200px;

@@ -50,3 +50,7 @@ callBtn.addEventListener("click", () => {
 window.location.href = "../../chatFlow3/index.html"
 })
 
+chat.addEventListener('click', ()=> {
+  window.location.href = "../../chatFlow2/index.html"
+})
+
