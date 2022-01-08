@@ -12,6 +12,7 @@
 
 .core-features p {
   font-size: 18px;
+  text-align: left;
 }
 .core-features p span {
   color: #e23a52;
@@ -21,14 +22,14 @@
 .jackpot {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 55px;
   /* identical to box height, or 183% */
-
+  margin: -10px 0 0 0;
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: -1.5px;
+  text-align: left;
+  letter-spacing: -1.8px;
 
   color: #0f2137;
 }
@@ -106,7 +107,7 @@
 }
 
 .contact-left {
-  padding-top: 46px;
+  padding-top: 16px;
 }
 
 .contact-right {
@@ -116,6 +117,10 @@
   background-position: center center;
   height: 750px;
 }
+.banner-intro {
+  margin-bottom: 0;
+}
+
 .banner-intro h1 {
   font-size: 2.2rem;
 }
@@ -134,11 +139,11 @@
 }
 
 @media (min-width: 1024px) {
-  header{
+  header {
     margin-bottom: 10px;
   }
 
-  .testimonials{
+  .testimonials {
     margin-top: 40px;
   }
   .banner-intro {
@@ -147,6 +152,7 @@
 
   .about-banner {
     padding-top: 30px !important;
+    margin-bottom: 0 !important;
   }
   .banner-intro h1 {
     font-size: 64px;

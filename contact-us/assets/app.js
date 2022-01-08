@@ -64,11 +64,11 @@ next.onclick = () => {
 // work to do here.
 prev.onclick = () => {
   left--;
-  if (left > 0) {
-    //  prev.onclick = "null";
-    prev.style.backgroundImage = "url(./assets/forwardSwitch.png)";
-    prev.style.transform = "rotate(-180deg)";
-  }
+  // if (left > 0) {
+  //   //  prev.onclick = "null";
+  //   prev.style.backgroundImage = "url(./assets/forwardSwitch.png)";
+  //   prev.style.transform = "rotate(-180deg)";
+  // }
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
