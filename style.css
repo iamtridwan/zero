@@ -758,7 +758,7 @@ img {
   color: var(--pry-color);
 }
 
-input::placeholder{
+input::placeholder {
   color: var(--pry-color);
 }
 
@@ -1054,23 +1054,30 @@ footer {
     margin-top: 146px;
   }
   .support-img {
-    height: 483px;
-    width: 355px;
+    height: 450px;
+    width: 290px;
+  }
+  #table {
+    height: 380px;
   }
 
+  #fone {
+    height: 380px;
+    transform: translateY(35px);
+  }
   .support-info {
     text-align: left;
     height: 395px;
     width: 486px;
     margin-right: -10px;
-    padding-top: 12vh;
+    padding-top: 8vh;
   }
   .support-means li p {
     margin: 0px 0 0 10px;
   }
   .main-blog {
     margin-top: 100px;
-    height: 531px;
+    height: 431px;
     border-radius: 0 100px 100px 0;
   }
 
@@ -1186,13 +1193,11 @@ footer {
   .subscribe {
     width: 78%;
     margin: auto;
- 
   }
 
   .subscribe label {
     text-align: left;
     width: 32%;
-  
   }
   .subscribe .form-group {
     margin-top: 0px;
@@ -1217,7 +1222,6 @@ footer {
     top: 0px;
     right: 0;
     width: 12%;
-
   }
   .connect {
     width: 85%;
