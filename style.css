@@ -332,7 +332,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 55%;
+  height: 250px;
   margin: 0 auto;
 }
 
