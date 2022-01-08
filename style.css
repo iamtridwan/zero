@@ -806,6 +806,7 @@ footer {
   letter-spacing: 0.1em;
   cursor: pointer;
   position: relative;
+  border-radius: 10px;
 }
 
 .connect button::after {
