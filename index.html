@@ -297,14 +297,15 @@
       </div>
     </div>
     <!-- subscribe form -->
-    <div class="subscribe">
+    <form class="subscribe" method="post" action="https://api.zerodepression.org/v1/ge/newsletter">
       <div class="form-group">
         <label for="name"> Subscribe to our mailing list for updates </label> 
-        <input type="text" name="name" required placeholder="Your Name" />
-        <input type="email" name="email" required placeholder="Your Email" />
-        <input type="submit" value="Subscribe" />
+        <input type="text" name="name" required placeholder="Your Name" id="name"/>
+        <input type="email" name="email" required placeholder="Your Email" id="email"/>
+        <input type="submit" value="Subscribe" id="subscribe"/>
       </div>
-    </div>
+      <p class="error">form input field is empty!</p>
+    </form>
     <!-- footer -->
     <footer>
       <div class="connect">

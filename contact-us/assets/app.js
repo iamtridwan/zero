@@ -11,19 +11,17 @@ CloseBtn.addEventListener("click", () => {
   sideNav.style.width = "0px";
 });
 
-
 // switch to counsellors page
 let gotoGallery = document.getElementById("goto_gallery");
-gotoGallery.addEventListener('click', ()=> {
+gotoGallery.addEventListener("click", () => {
   window.location.href = "../gallery/gallery.html";
-})
+});
 
 // manual image slide
 
 let cards = document.querySelectorAll(".card");
 let next = document.getElementById("next");
 let prev = document.getElementById("prev");
-
 
 // work on setting the left arrow.
 let left = 0;
@@ -170,3 +168,100 @@ function switchComments() {
 window.addEventListener("DOMContentLoaded", () => {
   switchComments();
 });
+
+// submitting contact-us form
+
+const contactName = document.getElementById("name");
+const contactEmail = document.getElementById("email");
+const contribution = document.getElementById("contribution");
+const contactBtn = document.getElementById("contact-btn");
+const url = "https://api.zerodepression.org/v1/ge/contact-us";
+
+contactBtn.addEventListener("click", () => {
+  let formElems = [contactName, contactEmail, contribution];
+  const contactForm = {
+    name: '',
+    email: '',
+    contribution: '',
+  };
+
+formElems.forEach((elem, idx) => {
+  if(validateFormElem(elem) && idx === 0){
+    contactForm.name = elem.value
+    elem.value = ''
+  }
+  else if(validateFormElem(elem) && idx === 1){
+    contactForm.email = elem.value
+    elem.value = ''
+  }
+  else if(validateFormElem(elem) && idx === 2){
+    contactForm.contribution = elem.value
+    elem.value = ''
+
+  }
+})
+ 
+
+  fetch(url, {
+    method: "post",
+    headers: {
+      Accept: "applicaton/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(contactForm),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+});
+
+
+// submitting subscribe form
+const subUrl = "https://api.zerodepression.org/v1/ge/newsletter";
+
+const subscriberName = document.getElementById("name");
+const subscriberEmail = document.getElementById("email");
+const subscribe = document.getElementById("subscribe");
+const error = document.querySelector(".subscribe .error");
+let subscriber = {
+  first_name: "",
+  email: "",
+};
+
+subscribe.addEventListener("click", () => {
+  if (subscriberName.value !== "" && subscriberEmail.value !== "") {
+    subscriber.first_name = subscriberName.value;
+    subscriber.email = subscriberEmail;
+    error.style.display = "none";
+    subscriberName.value = "";
+    subscriberEmail.value = "";
+
+    fetch(subUrl, 
+      {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(subscriber),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  } else {
+    error.style.display = "block";
+  }
+});
+
+
+// toggling the error
+const validateFormElem = (elem) => {
+  let response = true;
+  const hidden = elem.nextElementSibling;
+  if (elem.value === "") {
+    hidden.style.display = "block";
+    response = !response;
+  } else {
+    hidden.style.display = "none";
+    response = !response;
+  }
+  return response;
+};

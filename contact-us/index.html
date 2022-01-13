@@ -54,7 +54,11 @@
                     id="name"
                     name="name"
                     placeholder="Type here"
+                    required
                   />
+                  <div  class="error">
+                    please enter name
+                  </div>
                 </div>
                 <div class="input-group">
                   <label for="email">Your Email</label>
@@ -63,7 +67,12 @@
                     id="email"
                     name="email"
                     placeholder="Type here"
+                    required
                   />
+
+                  <div  class="error">
+                    please enter email
+                  </div>
                 </div>
                 <div class="input-group">
                   <label for="contribution">Your Contribution</label>
@@ -73,9 +82,14 @@
                     cols="30"
                     rows="6"
                     placeholder="Type here"
+                    required
                   ></textarea>
+
+                  <div class="error" id="text">
+                    what do you have to say?
+                  </div>
                 </div>
-                <button>Send us a message</button>
+                <button id="contact-btn">Send us a message</button>
               </div>
             </div>
             <div class="con-col-6 contact-right"></div>
@@ -226,13 +240,14 @@
       </div>
     </div>
     <!-- subscribe form -->
-    <div class="subscribe">
+   <div class="subscribe">
       <div class="form-group">
         <label for="name"> Subscribe to our mailing list for updates </label> 
-        <input type="text" name="name" required placeholder="Your Name" />
-        <input type="email" name="email" required placeholder="Your Email" />
-        <input type="submit" value="Subscribe" />
+        <input type="text" name="name" required placeholder="Your Name" id="name"/>
+        <input type="email" name="email" required placeholder="Your Email" id="email"/>
+        <input type="submit" value="Subscribe" id="subscribe"/>
       </div>
+      <p class="error">form input field is empty!</p>
     </div>
     
     <footer>

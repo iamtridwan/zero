@@ -326,7 +326,6 @@ ul {
   margin-bottom: 80px;
   position: relative;
   left: calc(100% - 90%);
-  /* text-align: left; */
 }
 .support-img {
   display: flex;
@@ -770,7 +769,10 @@ input::placeholder {
   cursor: pointer;
   text-align: center;
 }
-
+.error{
+  color: red;
+  display: none;
+}
 /* footer */
 footer {
   margin-top: 55px;

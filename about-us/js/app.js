@@ -11,12 +11,11 @@ CloseBtn.addEventListener("click", () => {
   sideNav.style.width = "0px";
 });
 
-
 // switch to counsellors page
 let gotoGallery = document.getElementById("goto_gallery");
-gotoGallery.addEventListener('click', ()=> {
+gotoGallery.addEventListener("click", () => {
   window.location.href = "../gallery/gallery.html";
-})
+});
 
 // manual image slide
 let cards = document.querySelectorAll(".card");
@@ -85,8 +84,6 @@ prev.onclick = () => {
   });
 };
 
-
-
 let date = new Date();
 year.textContent = date.getFullYear();
 
@@ -109,18 +106,6 @@ function checkPosition() {
 }
 window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
-
-//topbar scroll
-// const navBar = document.getElementsByTagName("nav");
-// navBar[0].style.maxWidth = "1440px";
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY === 0) {
-//     navBar[0].style.backgroundColor = "";
-//   } else {
-//     navBar[0].style.backgroundColor = "#fff";
-//     navBar[0].style.width = "unset";
-//   }
-// });
 
 // switching to flow1 page
 const buttons = document.querySelectorAll("header button");
@@ -185,4 +170,40 @@ function switchComments() {
 
 window.addEventListener("DOMContentLoaded", () => {
   switchComments();
+});
+
+// submitting subscribe form
+
+const url = "https://api.zerodepression.org/v1/ge/newsletter";
+
+const subscriberName = document.getElementById("name");
+const subscriberEmail = document.getElementById("email");
+const subscribe = document.getElementById("subscribe");
+const error = document.querySelector(".subscribe .error");
+let subscriber = {
+  first_name: "",
+  email: "",
+};
+
+subscribe.addEventListener("click", () => {
+  if (subscriberName.value !== "" && subscriberEmail.value !== "") {
+    subscriber.first_name = subscriberName.value;
+    subscriber.email = subscriberEmail;
+    error.style.display = "none";
+    subscriberName.value = "";
+    subscriberEmail.value = "";
+
+    fetch(url, {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(subscriber),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  } else {
+    error.style.display = "block";
+  }
 });

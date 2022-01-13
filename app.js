@@ -13,16 +13,15 @@ CloseBtn.addEventListener("click", () => {
 
 // switch to counsellors page
 let gotoGallery = document.getElementById("goto_gallery");
-gotoGallery.addEventListener('click', ()=> {
-  window.location.href = './counsellor/index.html'
-})
+gotoGallery.addEventListener("click", () => {
+  window.location.href = "./counsellor/index.html";
+});
 
 // manual image slide
 
 let cards = document.querySelectorAll(".card");
 let next = document.getElementById("next");
 let prev = document.getElementById("prev");
-
 
 // work on setting the left arrow.
 let left = 0;
@@ -167,27 +166,61 @@ goto.addEventListener("click", () => {
   window.location.href = "./blog/index.html";
 });
 
-
-
 // auto switch comments
 
-function switchComments(){
-  let count = 0
+function switchComments() {
+  let count = 0;
   setInterval(() => {
-    if(count > 2){
-      count = 0
+    if (count > 2) {
+      count = 0;
     }
     avatars.forEach((avatar, index) => {
-      avatar.classList.remove("active-user")
-      if(count === index){
-        avatar.classList.add("active-user")
+      avatar.classList.remove("active-user");
+      if (count === index) {
+        avatar.classList.add("active-user");
         mainComment.textContent = comments[index];
       }
     }),
-    count++
-  }, 2500)
+      count++;
+  }, 2500);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  switchComments()
-})
+  switchComments();
+});
+
+// submitting subscribe form
+
+// const url = "https://api.zerodepression.org/v1/ge/newsletter";
+
+// const subscriberName = document.getElementById("name");
+// const subscriberEmail = document.getElementById("email");
+// const subscribe = document.getElementById("subscribe");
+// const error = document.querySelector(".subscribe .error");
+// let subscriber = {
+//   first_name: "",
+//   email: "",
+// };
+
+// subscribe.addEventListener("click", () => {
+//   if (subscriberName.value !== "" && subscriberEmail.value !== "") {
+//     subscriber.first_name = subscriberName.value;
+//     subscriber.email = subscriberEmail;
+//     error.style.display = "none";
+//     subscriberName.value = "";
+//     subscriberEmail.value = "";
+
+//     fetch(url, {
+//       method: "post",
+//       headers: {
+//         Accept: "application/json",
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(subscriber),
+//     })
+//       .then((res) => res.json())
+//       .then((data) => console.log(data));
+//   } else {
+//     error.style.display = "block";
+//   }
+// });

@@ -1,8 +1,6 @@
-body{
-  background-color:#F6F8FB;
-;
+body {
+  background-color: #f6f8fb;
 }
-
 
 .hero {
   width: 100%;
@@ -43,7 +41,7 @@ body{
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
-.card-body p{
+.card-body p {
   opacity: 0.6;
 }
 
@@ -86,6 +84,9 @@ body{
   background-color: #ddd;
 }
 
+.foot-nav {
+  margin-bottom: 0;
+}
 /* media query */
 @media screen and (min-width: 1024px) {
   .blog {
@@ -114,7 +115,7 @@ body{
     display: initial;
   }
 
-  .subscribe{
+  .subscribe {
     width: 88%;
     margin: 40px auto;
   }
