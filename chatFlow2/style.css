@@ -115,6 +115,7 @@ section img {
   position: relative;
   text-align: center;
   width: 197.47px;
+  font-weight: 500;
 }
 .greet h4::after {
   content: "";
@@ -136,6 +137,7 @@ section img {
   font-size: 18px;
   margin: 10px 0 0 0;
   width: 205px;
+  font-weight: 500;
 }
 
 /* note */
@@ -188,6 +190,7 @@ section img {
   border-radius: 42px;
   position: relative;
   width: 197.47px;
+  font-weight: 500;
 }
 .typo h3::after {
   content: "";
@@ -221,6 +224,7 @@ section img {
   margin: 10px 0;
   padding: 10px;
   width: 230px;
+  font-weight: 500;
 }
 
 .chats p:first-child {
@@ -255,6 +259,7 @@ article p {
   padding: 10px;
   margin: 0;
   font-size: 18px;
+  font-weight: 500;
 }
 article p:last-child {
   background-color: var(--pry-color);
@@ -281,6 +286,7 @@ article p:last-child {
   position: relative;
   text-align: center;
   width: 197.47px;
+  font-weight: 500;
 }
 
 .last-comment p::after {
@@ -377,6 +383,7 @@ input:focus {
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
+  font-weight: 500;
 }
 
 .popupBtn {
