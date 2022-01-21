@@ -149,6 +149,25 @@ ul {
   width: 100%;
   height: 100%;
   margin: auto;
+  z-index: 5;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  
+}
+.banner-img::after {
+  content: "";
+  position: absolute;
+  background-color: var(--pry-color);
+  width: inherit;
+  height: inherit;
+  left: -10px;
+  top: 0px;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .banner-intro {
@@ -769,7 +788,7 @@ input::placeholder {
   cursor: pointer;
   text-align: center;
 }
-.error{
+.error {
   color: red;
   display: none;
 }
@@ -818,7 +837,7 @@ footer {
   height: 150px;
   top: -100px;
   left: 20%;
-  background: url(../assets/topdash.png) no-repeat center;
+  background: url(./assets/topdash.png) no-repeat center;
   background-size: 60%;
   position: absolute;
 }
@@ -829,7 +848,7 @@ footer {
   height: 150px;
   top: -10px;
   left: 20%;
-  background: url(../assets/botdash.png) no-repeat center;
+  background: url(./assets/botdash.png) no-repeat center;
   background-size: 60%;
   position: absolute;
 }
@@ -1031,11 +1050,9 @@ footer {
 
   .banner-img {
     height: 420px;
-    width: 458px;
+    width: 428px;
   }
   .banner-img img {
-    width: 100%;
-    height: 100%;
     margin-left: auto;
   }
   .features {
@@ -1233,7 +1250,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(../assets/arrow.png);
+    background-image: url(./assets/arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;

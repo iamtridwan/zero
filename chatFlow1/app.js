@@ -47,10 +47,10 @@ let callBtn = document.getElementById("call");
 const chat = document.getElementById("chat");
 
 callBtn.addEventListener("click", () => {
-window.location.href = "../../chatFlow3/index.html"
+window.location.href = "../chatFlow3/index.html"
 })
 
 chat.addEventListener('click', ()=> {
-  window.location.href = "../../chatFlow2/index.html"
+  window.location.href = "../chatFlow2/index.html"
 })
 

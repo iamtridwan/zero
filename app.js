@@ -92,12 +92,12 @@ const footerBtn = document.querySelector(".connect button");
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    window.location.href = "../chatFlow1/index.html";
+    window.location.href = "./chatFlow1/index.html";
   });
 });
 
 footerBtn.addEventListener("click", () => {
-  window.location.href = "../chatFlow1/index.html";
+  window.location.href = "./chatFlow1/index.html";
 });
 
 // setting date dynmically for footer
@@ -157,7 +157,7 @@ avatars.forEach((avatar) => {
 
 const send = document.getElementById("send");
 send.addEventListener("click", () => {
-  window.location.href = "../contact-us/index.html";
+  window.location.href = "./contact-us/index.html";
 });
 
 const goto = document.getElementById("goto-blog");
