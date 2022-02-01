@@ -191,36 +191,43 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // submitting subscribe form
 
-// const url = "https://api.zerodepression.org/v1/ge/newsletter";
+const url = "https://api.zerodepression.org/v1/ge/newsletter";
 
-// const subscriberName = document.getElementById("name");
-// const subscriberEmail = document.getElementById("email");
-// const subscribe = document.getElementById("subscribe");
-// const error = document.querySelector(".subscribe .error");
-// let subscriber = {
-//   first_name: "",
-//   email: "",
-// };
+const subscriberName = document.getElementById("name");
+const subscriberEmail = document.getElementById("email");
+const subscribe = document.getElementById("subscribe");
+const error = document.querySelector(".subscribe .error");
+let subscriber = {
+  first_name: "",
+  email: "",
+};
 
-// subscribe.addEventListener("click", () => {
-//   if (subscriberName.value !== "" && subscriberEmail.value !== "") {
-//     subscriber.first_name = subscriberName.value;
-//     subscriber.email = subscriberEmail;
-//     error.style.display = "none";
-//     subscriberName.value = "";
-//     subscriberEmail.value = "";
+subscribe.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (subscriberName.value !== "" && subscriberEmail.value !== "") {
+    subscriber.first_name = subscriberName.value;
+    subscriber.email = subscriberEmail;
+    error.style.display = "none";
+    subscriberName.value = "";
+    subscriberEmail.value = "";
 
-//     fetch(url, {
-//       method: "post",
-//       headers: {
-//         Accept: "application/json",
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(subscriber),
-//     })
-//       .then((res) => res.json())
-//       .then((data) => console.log(data));
-//   } else {
-//     error.style.display = "block";
-//   }
-// });
+    fetch(url, {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(subscriber),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          res.json();
+        } else {
+          throw Error();
+        }
+      })
+      .then((data) => console.log(data));
+  } else {
+    error.style.display = "block";
+  }
+});
