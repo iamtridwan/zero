@@ -87,18 +87,18 @@ prev.onclick = () => {
 };
 
 // switching to flow1 page
-const buttons = document.querySelectorAll("header button");
-const footerBtn = document.querySelector(".connect button");
+// const buttons = document.querySelectorAll("header button");
+// const footerBtn = document.querySelector(".connect button");
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    window.location.href = "./chatFlow1/index.html";
-  });
-});
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     window.location.href = "./chatFlow1/index.html";
+//   });
+// });
 
-footerBtn.addEventListener("click", () => {
-  window.location.href = "./chatFlow1/index.html";
-});
+// footerBtn.addEventListener("click", () => {
+//   window.location.href = "./chatFlow1/index.html";
+// });
 
 // setting date dynmically for footer
 let date = new Date();
@@ -226,7 +226,8 @@ subscribe.addEventListener("click", (e) => {
           throw Error();
         }
       })
-      .then((data) => console.log(data));
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
   } else {
     error.style.display = "block";
   }

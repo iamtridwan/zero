@@ -7,6 +7,15 @@
     <title>zerodepression</title>
     <!--common stylesheet used as a base-->
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </head>
   <body>
     <header>
@@ -21,7 +30,13 @@
           <li><a href="./about-us/index.html">About Us</a></li>
           <li><a href="./contact-us/index.html">Contact Us</a></li>
         </ul>
-        <button id="talk">Talk with a Councillor</button>
+        <!-- <button id="talk">Talk with a Councillor</button> -->
+        <button
+          id="talk"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
         <!-- hamburger -->
         <div class="hamburger">
           <div class="dash"></div>
@@ -40,7 +55,12 @@
             never an option and that is the reason why we are here for you.
           </p>
 
-          <button>Talk with a Councillor</button>
+          <button
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+          >
+            Talk with a Councillor
+          </button>
+          <!-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;">Chat with a counsellor</a> -->
         </div>
         <div class="banner-img">
           <img
@@ -57,7 +77,12 @@
       <a href="./blog/index.html">Blog</a>
       <a href="./about-us/index.html">About Us</a>
       <a href="./contact-us/index.html">Contact Us</a>
-      <a href="./chatFlow1/index.html">Talk with a Councillor</a>
+      <!-- <a href="./chatFlow1/index.html">Talk with a Councillor</a> -->
+      <a
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >Talk with a Councillor</a
+      >
     </div>
     <!-- features -->
     <section class="features hidden">
@@ -113,7 +138,7 @@
     <div class="content">
       <section class="main-blog">
         <div class="main-blog__img" id="table">
-          <img src="./assets/table.webp" alt="at the table"  />
+          <img src="./assets/table.webp" alt="at the table" />
         </div>
         <div class="support-info">
           <h4>Looking for inspiring posts?</h4>
@@ -215,32 +240,24 @@
         <!-- card start -->
         <div class="card">
           <div class="card_1">
-            <img
-              src="./assets/stefan-stefancik-5p_7M5MP2Iw-unsplash.webp"
-              alt="woman with a child"
-            />
+            <img src="./assets/blessing.png" alt="fine lady" />
           </div>
           <div class="card-body">
-            <h3>James Brown</h3>
+            <h3>Obawomiye Blessing</h3>
             <p>
-              James Brown is a professional councillor for the university of
-              texas
+              Obawomiye Blessing is a professional councillor from the university of texas
             </p>
           </div>
         </div>
         <!-- card start -->
         <div class="card">
           <div class="card_2">
-            <img
-              src="./assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-              alt="a man with sunglasses"
-            />
+            <img src="./assets/Ajibade.png" alt="fine man" />
           </div>
           <div class="card-body">
-            <h3>James Kate</h3>
+            <h3>Ajibade Adeola</h3>
             <p>
-              James Brown is a professional councillor for the university of
-              texas
+              Ajibade Adeola is a professional councillor from the university of texas
             </p>
           </div>
         </div>
@@ -248,15 +265,15 @@
         <div class="card">
           <div class="card_3">
             <img
-              src="./assets/corinne-kutz-tMI2_-r5Nfo-unsplash.webp"
-              alt="a man with camera"
+              src="./assets/AJIBADE OLUSOLA 1.png"
+              alt="fine lady"
             />
           </div>
 
           <div class="card-body">
-            <h3>Job Jake</h3>
+            <h3>Ajibade Olusola</h3>
             <p>
-              James Brown is a professional councillor for the university of
+              Ajibade Olusola is a professional councillor from the university of
               texas
             </p>
           </div>
@@ -299,10 +316,22 @@
     <!-- subscribe form -->
     <form class="subscribe">
       <div class="form-group">
-        <label for="name"> Subscribe to our mailing list for updates </label> 
-        <input type="text" name="name" required placeholder="Your Name" id="name"/>
-        <input type="email" name="email" required placeholder="Your Email" id="email"/>
-        <input type="submit" value="Subscribe" id="subscribe"/>
+        <label for="name"> Subscribe to our mailing list for updates </label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your Name"
+          id="name"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your Email"
+          id="email"
+        />
+        <input type="submit" value="Subscribe" id="subscribe" />
       </div>
       <p class="error">form input field is empty!</p>
     </form>
@@ -310,7 +339,12 @@
     <footer>
       <div class="connect">
         <p>Connect with the most compassionate councillors for free</p>
-        <button>Talk with a councillor</button>
+        <!-- <button>Talk with a councillor</button> -->
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
       </div>
       <div class="foot-nav">
         <div class="logo">

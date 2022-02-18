@@ -12,18 +12,18 @@ CloseBtn.addEventListener("click", () => {
 });
 
 // switching to flow1 page
-const buttons = document.querySelectorAll("header button");
-const footerBtn = document.querySelector(".connect button");
+// const buttons = document.querySelectorAll("header button");
+// const footerBtn = document.querySelector(".connect button");
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    window.location.href = "../chatFlow1/index.html";
-  });
-});
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     window.location.href = "../chatFlow1/index.html";
+//   });
+// });
 
-footerBtn.addEventListener("click", () => {
-  window.location.href = "../chatFlow1/index.html";
-});
+// footerBtn.addEventListener("click", () => {
+//   window.location.href = "../chatFlow1/index.html";
+// });
 
 //animations
 let elements = document.querySelectorAll(".hidden");

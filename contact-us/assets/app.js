@@ -87,11 +87,11 @@ prev.onclick = () => {
 };
 
 // switching to flow1 page
-const footerBtn = document.querySelector(".connect button");
+// const footerBtn = document.querySelector(".connect button");
 
-footerBtn.addEventListener("click", () => {
-  window.location.href = "../chatFlow1/index.html";
-});
+// footerBtn.addEventListener("click", () => {
+//   window.location.href = "../chatFlow1/index.html";
+// });
 
 // setting date dynmically for footer
 let date = new Date();

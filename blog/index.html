@@ -8,6 +8,16 @@
     <!--common stylesheet used as a base-->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./blog.css" />
+    
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </head>
   <body>
     <header>
@@ -18,12 +28,17 @@
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-           <li><a href="#" class="active">Blog</a></li>
+          <li><a href="#" class="active">Blog</a></li>
           <li><a href="../about-us/index.html">About Us</a></li>
           <li><a href="../contact-us/index.html">Contact Us</a></li>
-         
         </ul>
-        <button id="talk">Talk with a Councillor</button>
+        <!-- <button id="talk">Talk with a Councillor</button> -->
+        <button
+          id="talk"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
         <!-- hamburger -->
         <div class="hamburger">
           <div class="dash"></div>
@@ -40,8 +55,13 @@
       <a href="#">Blog</a>
       <a href="../about-us/index.html">About Us</a>
       <a href="../contact-us/index.html">Contact Us</a>
-      
-      <a href="../chatFlow1/index.html">Talk with a Councillor</a>
+
+      <!-- <a href="./chatFlow1/index.html">Talk with a Councillor</a> -->
+      <a
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >Talk with a Councillor</a
+      >
     </div>
 
     <!-- blog -->
@@ -216,96 +236,6 @@
       </div>
       <!-- card start -->
       <div class="card hide">
-        <div class="card_2 ">
-          <img
-            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-            alt="a man with sunglasses"
-          />
-        </div>
-        <div class="card-body">
-          <h3>James Kate</h3>
-          <p>
-            James Brown is a professional councillor for the university of texas
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            itaque facere quia cumque eveniet sed.
-          </p>
-          <a href="../blogDetails/detail.html">Read More</a>
-        </div>
-      </div>
-      <!-- card start -->
-      <div class="card hide">
-        <div class="card_2 ">
-          <img
-            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-            alt="a man with sunglasses"
-          />
-        </div>
-        <div class="card-body">
-          <h3>James Kate</h3>
-          <p>
-            James Brown is a professional councillor for the university of texas
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            itaque facere quia cumque eveniet sed.
-          </p>
-          <a href="../blogDetails/detail.html">Read More</a>
-        </div>
-      </div>
-      <!-- card start -->
-      <div class="card hide">
-        <div class="card_2 ">
-          <img
-            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-            alt="a man with sunglasses"
-          />
-        </div>
-        <div class="card-body">
-          <h3>James Kate</h3>
-          <p>
-            James Brown is a professional councillor for the university of texas
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            itaque facere quia cumque eveniet sed.
-          </p>
-          <a href="../blogDetails/detail.html">Read More</a>
-        </div>
-      </div>
-      <!-- card start -->
-      <div class="card hide">
-        <div class="card_2 ">
-          <img
-            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-            alt="a man with sunglasses"
-          />
-        </div>
-        <div class="card-body">
-          <h3>James Kate</h3>
-          <p>
-            James Brown is a professional councillor for the university of texas
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            itaque facere quia cumque eveniet sed.
-          </p>
-          <a href="../blogDetails/detail.html">Read More</a>
-        </div>
-      </div>
-      <!-- card start -->
-      <div class="card hide">
-        <div class="card_2 ">
-          <img
-            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-            alt="a man with sunglasses"
-          />
-        </div>
-        <div class="card-body">
-          <h3>James Kate</h3>
-          <p>
-            James Brown is a professional councillor for the university of texas
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            itaque facere quia cumque eveniet sed.
-          </p>
-          <a href="../blogDetails/detail.html">Read More</a>
-        </div>
-      </div>
-      <!-- card start -->
-      <div class="card  hide">
         <div class="card_2">
           <img
             src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
@@ -324,7 +254,97 @@
       </div>
       <!-- card start -->
       <div class="card hide">
-        <div class="card_2 ">
+        <div class="card_2">
+          <img
+            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
+            alt="a man with sunglasses"
+          />
+        </div>
+        <div class="card-body">
+          <h3>James Kate</h3>
+          <p>
+            James Brown is a professional councillor for the university of texas
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            itaque facere quia cumque eveniet sed.
+          </p>
+          <a href="../blogDetails/detail.html">Read More</a>
+        </div>
+      </div>
+      <!-- card start -->
+      <div class="card hide">
+        <div class="card_2">
+          <img
+            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
+            alt="a man with sunglasses"
+          />
+        </div>
+        <div class="card-body">
+          <h3>James Kate</h3>
+          <p>
+            James Brown is a professional councillor for the university of texas
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            itaque facere quia cumque eveniet sed.
+          </p>
+          <a href="../blogDetails/detail.html">Read More</a>
+        </div>
+      </div>
+      <!-- card start -->
+      <div class="card hide">
+        <div class="card_2">
+          <img
+            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
+            alt="a man with sunglasses"
+          />
+        </div>
+        <div class="card-body">
+          <h3>James Kate</h3>
+          <p>
+            James Brown is a professional councillor for the university of texas
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            itaque facere quia cumque eveniet sed.
+          </p>
+          <a href="../blogDetails/detail.html">Read More</a>
+        </div>
+      </div>
+      <!-- card start -->
+      <div class="card hide">
+        <div class="card_2">
+          <img
+            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
+            alt="a man with sunglasses"
+          />
+        </div>
+        <div class="card-body">
+          <h3>James Kate</h3>
+          <p>
+            James Brown is a professional councillor for the university of texas
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            itaque facere quia cumque eveniet sed.
+          </p>
+          <a href="../blogDetails/detail.html">Read More</a>
+        </div>
+      </div>
+      <!-- card start -->
+      <div class="card hide">
+        <div class="card_2">
+          <img
+            src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
+            alt="a man with sunglasses"
+          />
+        </div>
+        <div class="card-body">
+          <h3>James Kate</h3>
+          <p>
+            James Brown is a professional councillor for the university of texas
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            itaque facere quia cumque eveniet sed.
+          </p>
+          <a href="../blogDetails/detail.html">Read More</a>
+        </div>
+      </div>
+      <!-- card start -->
+      <div class="card hide">
+        <div class="card_2">
           <img
             src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
             alt="a man with sunglasses"
@@ -342,7 +362,7 @@
       </div>
     </div>
     <!-- pagination -->
-     <div class="pagination">
+    <div class="pagination">
       <div class="links">
         <a href="#" class="active">1</a>
         <a href="#">2</a>
@@ -350,16 +370,30 @@
         <a href="#">4</a>
         <a href="#">...</a>
         <a href="#">20</a>
-        <a href="#" id="last"><img src="../assets/forwardSwitch.png" alt="arrow" /></a>
+        <a href="#" id="last"
+          ><img src="../assets/forwardSwitch.png" alt="arrow"
+        /></a>
       </div>
     </div>
-  <!-- subscribe form -->
+    <!-- subscribe form -->
     <div class="subscribe">
       <div class="form-group">
-        <label for="name"> Subscribe to our mailing list for updates </label> 
-        <input type="text" name="name" required placeholder="Your Name" id="name"/>
-        <input type="email" name="email" required placeholder="Your Email" id="email"/>
-        <input type="submit" value="Subscribe" id="subscribe"/>
+        <label for="name"> Subscribe to our mailing list for updates </label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your Name"
+          id="name"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your Email"
+          id="email"
+        />
+        <input type="submit" value="Subscribe" id="subscribe" />
       </div>
       <p class="error">form input field is empty!</p>
     </div>
@@ -367,7 +401,12 @@
     <footer>
       <div class="connect">
         <p>Connect with the most compassionate councillors for free</p>
-        <button>Talk with a councillor</button>
+        <!-- <button>Talk with a councillor</button> -->
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
       </div>
       <div class="foot-nav">
         <div class="logo">
@@ -376,10 +415,14 @@
         </div>
         <!-- footer social logos -->
         <div class="socials">
-          <a href="https://web.facebook.com/officialzerodepression" target="_blank"
+          <a
+            href="https://web.facebook.com/officialzerodepression"
+            target="_blank"
             ><img src="../assets/facebook logo.png" alt="facebook logo"
           /></a>
-           <a href="https://www.linkedin.com/company/zero-depression" target="_blank"
+          <a
+            href="https://www.linkedin.com/company/zero-depression"
+            target="_blank"
             ><img src="../assets/linkedlogo.png" alt="linkedIn logo"
           /></a>
           <a href="https://instagram.com/officialzerodepression" target="_blank"
@@ -395,7 +438,6 @@
           <li><a href="#">Blog</a></li>
           <li><a href="../about-us/index.html">About Us </a></li>
           <li><a href="../contact-us/index.html">Contact Us</a></li>
-          
         </ul>
       </div>
     </footer>

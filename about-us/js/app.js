@@ -108,18 +108,18 @@ window.addEventListener("scroll", checkPosition);
 window.addEventListener("resize", checkPosition);
 
 // switching to flow1 page
-const buttons = document.querySelectorAll("header button");
-const footerBtn = document.querySelector(".connect button");
+// const buttons = document.querySelectorAll("header button");
+// const footerBtn = document.querySelector(".connect button");
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    window.location.href = "../chatFlow1/index.html";
-  });
-});
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     window.location.href = "../chatFlow1/index.html";
+//   });
+// });
 
-footerBtn.addEventListener("click", () => {
-  window.location.href = "../chatFlow1/index.html";
-});
+// footerBtn.addEventListener("click", () => {
+//   window.location.href = "../chatFlow1/index.html";
+// });
 // switching users
 
 // const user = document.querySelector('.users')

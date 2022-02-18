@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="./css/generic.css" />
     <!--common stylesheet used as a base-->
     <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </head>
   <body>
     <header class="trim-header">
@@ -23,7 +33,13 @@
           <li><a href="./" class="active">About Us</a></li>
           <li><a href="../contact-us/">Contact Us</a></li>
         </ul>
-        <button id="talk">Talk with a Councillor</button>
+        <!-- <button id="talk">Talk with a Councillor</button> -->
+        <button
+          id="talk"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
         <!-- hamburger -->
         <div class="hamburger">
           <div class="dash"></div>
@@ -75,8 +91,12 @@
       <a href="../blog/index.html">Blog</a>
       <a href="./">About Us</a>
       <a href="../contact-us">Contact Us</a>
-
-      <a href="../chatFlow1/index.html">Talk with a Councillor</a>
+      <!-- <a href="./chatFlow1/index.html">Talk with a Councillor</a> -->
+      <a
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >Talk with a Councillor</a
+      >
     </div>
 
     <!-- testimonials -->
@@ -128,52 +148,75 @@
         <!-- card start -->
         <div class="card">
           <div class="card_1">
-            <img
-              src="../assets/stefan-stefancik-5p_7M5MP2Iw-unsplash.webp"
-              alt="woman with a child"
-            />
+            <img src="../assets/ife.png" alt="fine man" />
           </div>
           <div class="card-body">
-            <h3>James Brown</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Onifade Ifeoluwa</h3>
+            <p>Team Lead</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/gallery/twitterLogo.png"
+                  alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
         <!-- card start -->
         <div class="card">
           <div class="card_2">
-            <img
-              src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-              alt="a man with sunglasses"
-            />
+            <img src="../assets/banji.png" alt="fine man" />
           </div>
           <div class="card-body">
-            <h3>James Kate</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Ewenla Olabanji</h3>
+            <p>Team Member</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/gallery/twitterLogo.png"
+                  alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
         <!-- card start -->
         <div class="card">
-          <div class="card_2">
-            <img
-              src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-              alt="a man with sunglasses"
-            />
+          <div class="card_3">
+            <img src="../assets/cisca.png" alt="fine woman" />
           </div>
+
           <div class="card-body">
-            <h3>James Kate</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Amuzie Francisca</h3>
+            <p>Team Member</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/gallery/twitterLogo.png"
+                  alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
+
       <!-- switch buttons  -->
       <div class="switch">
         <button id="prev"></button>
@@ -233,7 +276,12 @@
     <footer>
       <div class="connect">
         <p>Connect with the most compassionate councillors for free</p>
-        <button>Talk with a councillor</button>
+        <!-- <button>Talk with a councillor</button> -->
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
       </div>
       <div class="foot-nav">
         <div class="logo">

@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../assets/css/generic.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </head>
   <body>
     <!-- side menu -->
@@ -22,9 +31,15 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../blog/index.html">Blog</a></li>
           <li><a href="../about-us/index.html">About Us</a></li>
-          <li><a href="./" class="active">Contact Us</a></li>  
+          <li><a href="./" class="active">Contact Us</a></li>
         </ul>
-        <button id="talk">Talk with a Councillor</button>
+        <!-- <button id="talk">Talk with a Councillor</button> -->
+        <button
+          id="talk"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
         <!-- hamburger -->
         <div class="hamburger">
           <div class="dash"></div>
@@ -56,9 +71,7 @@
                     placeholder="Type here"
                     required
                   />
-                  <div  class="error">
-                    please enter name
-                  </div>
+                  <div class="error">please enter name</div>
                 </div>
                 <div class="input-group">
                   <label for="email">Your Email</label>
@@ -70,9 +83,7 @@
                     required
                   />
 
-                  <div  class="error">
-                    please enter email
-                  </div>
+                  <div class="error">please enter email</div>
                 </div>
                 <div class="input-group">
                   <label for="contribution">Your Contribution</label>
@@ -85,9 +96,7 @@
                     required
                   ></textarea>
 
-                  <div class="error" id="text">
-                    what do you have to say?
-                  </div>
+                  <div class="error" id="text">what do you have to say?</div>
                 </div>
                 <button id="contact-btn">Send us a message</button>
               </div>
@@ -103,8 +112,13 @@
       <a href="../index.html">Home</a>
       <a href="/blog/index.html">Blog</a>
       <a href="../about-us/index.html">About Us</a>
-      <a href="./">Contact Us</a> 
-      <a href="../chatFlow1/index.html">Talk with a Councillor</a>
+      <a href="./">Contact Us</a>
+      <!-- <a href="./chatFlow1/index.html">Talk with a Councillor</a> -->
+      <a
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >Talk with a Councillor</a
+      >
     </div>
 
     <!-- testimonials -->
@@ -156,67 +170,80 @@
         <!-- card start -->
         <div class="card">
           <div class="card_1">
-            <img
-              src="../assets/stefan-stefancik-5p_7M5MP2Iw-unsplash.webp"
-              alt="a man with sunglasses"
-            />
+            <img src="../assets/ife.png" alt="fine man" />
           </div>
           <div class="card-body">
-            <h3>James Brown</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Onifade Ifeoluwa</h3>
+            <p>Team Lead</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img src="../assets/gallery/twitterLogo.png" alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
         <!-- card start -->
         <div class="card">
           <div class="card_2">
-            <img
-              src="../assets/avel-chuklanov-DUmFLtMeAbQ-unsplash.webp"
-              alt="man with camera"
-            />
+            <img src="../assets/banji.png" alt="fine man" />
           </div>
           <div class="card-body">
-            <h3>James Kate</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Ewenla Olabanji</h3>
+            <p>Team Member</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img src="../assets/gallery/twitterLogo.png" alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
         <!-- card start -->
         <div class="card">
           <div class="card_3">
-            <img
-              src="../assets/corinne-kutz-tMI2_-r5Nfo-unsplash.webp"
-              alt="woman with a child"
-            />
+            <img src="../assets/cisca.png" alt="fine woman" />
           </div>
 
           <div class="card-body">
-            <h3>Job Jake</h3>
-            <p>
-              James Brown is a professional councillor for the university of
-              texas
-            </p>
+            <h3>Amuzie Francisca</h3>
+            <p>Team Member</p>
+            <div class="social-connect">
+              <a href="#">
+                <img src="../assets/gallery/fblogo.png" alt="facebook logo" />
+              </a>
+              <a href="#"
+                ><img src="../assets/gallery/inlogo.png" alt="linkedIn logo"
+              /></a>
+              <a href="#"
+                ><img src="../assets/gallery/twitterLogo.png" alt="twitter logo"
+              /></a>
+            </div>
           </div>
         </div>
-      
-      
       </div>
 
-       <!-- switch buttons  -->
+      <!-- switch buttons  -->
       <div class="switch">
-         <button id="prev"></button>
+        <button id="prev"></button>
         <button id="next"></button>
       </div>
       <div class="switch_goto">
-      <button id="goto_gallery">
-        <h3>View Gallery</h3>
-        <img src="../assets/galleryArr.png" alt="forward arrow" />
-      </button>
-    </div>
+        <button id="goto_gallery">
+          <h3>View Gallery</h3>
+          <img src="../assets/galleryArr.png" alt="forward arrow" />
+        </button>
+      </div>
     </section>
 
     <!-- suppoters -->
@@ -240,20 +267,37 @@
       </div>
     </div>
     <!-- subscribe form -->
-   <div class="subscribe">
+    <div class="subscribe">
       <div class="form-group">
-        <label for="name"> Subscribe to our mailing list for updates </label> 
-        <input type="text" name="name" required placeholder="Your Name" id="name"/>
-        <input type="email" name="email" required placeholder="Your Email" id="email"/>
-        <input type="submit" value="Subscribe" id="subscribe"/>
+        <label for="name"> Subscribe to our mailing list for updates </label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your Name"
+          id="name"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your Email"
+          id="email"
+        />
+        <input type="submit" value="Subscribe" id="subscribe" />
       </div>
       <p class="error">form input field is empty!</p>
     </div>
-    
+
     <footer>
       <div class="connect">
         <p>Connect with the most compassionate councillors for free</p>
-        <button>Talk with a councillor</button>
+        <!-- <button>Talk with a councillor</button> -->
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zerodepression?background_color=fafbfd&primary_color=ffa500'});return false;"
+        >
+          Talk with a Councillor
+        </button>
       </div>
       <div class="foot-nav">
         <div class="logo">
@@ -262,10 +306,14 @@
         </div>
         <!-- footer social logos -->
         <div class="socials">
-          <a href="https://web.facebook.com/officialzerodepression" target="_blank"
+          <a
+            href="https://web.facebook.com/officialzerodepression"
+            target="_blank"
             ><img src="../assets/facebook logo.png" alt="facebook logo"
           /></a>
-          <a href="https://www.linkedin.com/company/zero-depression" target="_blank"
+          <a
+            href="https://www.linkedin.com/company/zero-depression"
+            target="_blank"
             ><img src="../assets/linkedlogo.png" alt="linkedIn logo"
           /></a>
           <a href="https://instagram.com/officialzerodepression" target="_blank"
@@ -281,7 +329,6 @@
           <li><a href="/blog/index.html">Blog</a></li>
           <li><a href="../about-us/index.html">About Us</a></li>
           <li><a href="./">Contact Us</a></li>
-          
         </ul>
       </div>
     </footer>
