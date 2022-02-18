@@ -12,10 +12,10 @@ CloseBtn.addEventListener("click", () => {
 });
 
 // switch to counsellors page
-let gotoGallery = document.getElementById("goto_gallery");
-gotoGallery.addEventListener("click", () => {
-  window.location.href = "../gallery/gallery.html";
-});
+// let gotoGallery = document.getElementById("goto_gallery");
+// gotoGallery.addEventListener("click", () => {
+//   window.location.href = "../gallery/gallery.html";
+// });
 
 // manual image slide
 

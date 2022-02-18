@@ -99,17 +99,27 @@ nav {
   justify-content: space-between;
 }
 
-.logo img {
-  width: 50%;
-  height: 50%;
-  margin: auto;
+.logo {
+  display: flex;
+  position: relative;
+}
+
+.logo .circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--pry-color);
+  position: absolute;
+  top: 0px;
+  left: -10px;
 }
 
 header nav h4 {
-  color: var(--pry-color);
+  color: var(--white);
   font-weight: var(--w2);
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
+  z-index: 1;
 }
 span {
   color: var(--sec-color);
@@ -156,7 +166,6 @@ ul {
   height: 100%;
   position: relative;
   z-index: 5;
-  
 }
 .banner-img::after {
   content: "";
@@ -612,6 +621,16 @@ h4 {
   left: 0;
   transition: left 1s;
 }
+
+.card_1,
+.card_2,
+.card_3,
+.card_4,
+.card_5 {
+  min-width: inherit;
+  height: 200px;
+}
+
 .card img {
   border-radius: 5px 5px 0 0;
 }
@@ -642,17 +661,17 @@ img {
 }
 
 /* media social */
-.social-connect{
+.social-connect {
   display: flex;
   width: 40%;
   justify-content: space-between;
   align-items: center;
 }
-.social-connect a{
+.social-connect a {
   height: 20px;
   width: 20px;
 }
-.social-connect a img{
+.social-connect a img {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -880,10 +899,18 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
+  position: relative;
+}
+
+.foot-nav .logo .circle {
+  width: 55px;
+  height: 55px;
+  top: -4px;
+  left: 24%;
 }
 .foot-nav .logo h3 {
-  color: var(--pry-color);
+  color: var(--white);
   height: 24px;
   width: 154px;
   font-size: 20px;
@@ -892,7 +919,7 @@ footer {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-
+  z-index: 1;
   margin: 10px 0;
 }
 
@@ -1200,6 +1227,15 @@ footer {
     min-width: 300px;
   }
 
+  .card_1,
+  .card_2,
+  .card_3,
+  .card_4,
+  .card_5 {
+    min-width: inherit;
+    height: 250px;
+  }
+
   .card-body {
     background-color: var(--white);
     padding: 18px 20px;
@@ -1323,7 +1359,16 @@ footer {
     width: fit-content;
     margin-left: 0;
     flex-direction: row;
+    margin: 0 auto;
   }
+
+  .foot-nav .logo .circle {
+    width: 55px;
+    height: 55px;
+    top: -4px;
+    left: -8px;
+  }
+
   .foot-nav ul {
     height: 33px;
     width: 350px;
