@@ -51,10 +51,26 @@ next.onclick = () => {
       card.style.left = "-1200px";
     }
     if (left === 5) {
-      card.style.left = "-0px";
+      card.style.left = "-1500px";
     }
-    if (left > 5) {
+    if (left === 6) {
+      card.style.left = "-1800px";
+    }
+    if (left === 7) {
+      card.style.left = "-2100px";
+    }
+    if (left === 8) {
+      card.style.left = "-2400px";
+    }
+    if (left === 9) {
+      card.style.left = "-2700px";
+    }
+    if (left === 10) {
+      card.style.left = "-3000px";
+    }
+    if (left > 10) {
       left = 0;
+      card.style.left = "0px";
     }
   });
 };
@@ -78,6 +94,15 @@ prev.onclick = () => {
       card.style.left = "-620px";
     }
     if (left === 3) {
+      card.style.left = "-920px";
+    }
+    if (left === 4) {
+      card.style.left = "-1200px";
+    }
+    if (left === 5) {
+      card.style.left = "-1400px";
+    }
+    if (left === 6) {
       card.style.left = "0px";
     }
     if (left < 0) {
