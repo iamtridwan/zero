@@ -65,4 +65,7 @@ strong {
   #dep {
     font-weight: 400;
   }
+  .card {
+    min-width: 300px;
+  }
 }
