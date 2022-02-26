@@ -851,40 +851,43 @@ footer {
   text-align: center;
 }
 
-.connect button {
-  display: block;
-  width: 60%;
+.connect .share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
   margin: 80px auto 40px auto;
-  background-color: var(--white);
-  color: var(--pry-color);
   font-size: 15px;
   border: none;
   padding: 9px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.1em;
-  cursor: pointer;
   position: relative;
-  border-radius: 10px;
 }
 
-.connect button::after {
+.share-buttons a{
+  cursor: pointer;
+  /* pointer-events: none; */
+}
+
+.connect .share-buttons::after {
   content: "";
-  width: inherit;
+  width: 80%;
   height: 150px;
   top: -100px;
-  left: 20%;
+  left: 13%;
   background: url(./assets/topdash.png) no-repeat center;
   background-size: 60%;
   position: absolute;
 }
 
-.connect button::before {
+.connect .share-buttons::before {
   content: "";
-  width: inherit;
+  width: 80%;
   height: 150px;
-  top: -10px;
-  left: 20%;
+  top: -4px;
+  left: 13%;
   background: url(./assets/botdash.png) no-repeat center;
   background-size: 60%;
   position: absolute;
@@ -1323,14 +1326,14 @@ footer {
     margin: 0;
   }
 
-  .connect button {
+  .connect .share-buttons{
     margin: 0;
     height: 60px;
     width: 260px;
     position: relative;
   }
 
-  .connect button::after {
+  .connect .share-buttons::after {
     content: "";
     width: inherit;
     height: inherit;
@@ -1340,7 +1343,7 @@ footer {
     position: absolute;
   }
 
-  .connect button::before {
+  .connect .share-buttons::before {
     content: "";
     width: inherit;
     height: inherit;
