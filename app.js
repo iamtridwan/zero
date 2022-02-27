@@ -232,3 +232,12 @@ subscribe.addEventListener("click", (e) => {
     error.style.display = "block";
   }
 });
+
+// let shareBtn = document.querySelectorAll(".share-buttons a img");
+// console.log(shareBtn);
+// shareBtn.forEach((btn) => {
+//   btn.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log(e.currentTarget);
+//   });
+// });

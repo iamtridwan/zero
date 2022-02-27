@@ -124,6 +124,7 @@ header nav h4 {
 span {
   color: var(--sec-color);
   font-weight: var(--w1);
+  margin-left: 2px;
 }
 
 ul {
@@ -615,7 +616,7 @@ h4 {
 .card {
   border-radius: 10px;
   margin-right: 10px;
-  min-width: 250px;
+  min-width: 330px;
   padding-bottom: 15px;
   position: relative;
   left: 0;
@@ -628,7 +629,7 @@ h4 {
 .card_4,
 .card_5 {
   min-width: inherit;
-  height: 200px;
+  height: 280px;
 }
 
 .card img {
@@ -855,7 +856,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55%;
+  width: 65%;
   margin: 80px auto 40px auto;
   font-size: 15px;
   border: none;
@@ -864,11 +865,17 @@ footer {
   line-height: 22px;
   letter-spacing: 0.1em;
   position: relative;
+  padding: 10px;
 }
 
-.share-buttons a{
+.share-buttons a {
   cursor: pointer;
-  /* pointer-events: none; */
+  display: block;
+  z-index: 20;
+}
+.share-buttons a img {
+  width: 30px;
+  height: 30px;
 }
 
 .connect .share-buttons::after {
@@ -929,6 +936,7 @@ footer {
 .foot-nav .logo h3 span {
   color: var(--sec-color);
   font-weight: 400;
+  margin-left: 1px;
 }
 
 .foot-nav .logo p {
@@ -989,7 +997,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .header {
-    height: 100vh;
+    height: fit-content;
   }
   .hamburger {
     display: none;
@@ -1065,8 +1073,7 @@ footer {
   }
 
   .banner-intro {
-    height: 441px;
-    width: 550px;
+    width: 650px;
   }
 
   .banner-intro h1 {
@@ -1083,10 +1090,10 @@ footer {
   }
 
   .banner-intro p {
-    width: 80%;
+    width: 90%;
     font-size: 18px;
     text-align: left;
-    margin: 40px 0;
+    margin: 10px 0;
   }
 
   .banner-intro button {
@@ -1097,12 +1104,13 @@ footer {
   }
 
   .banner-img {
-    height: 420px;
-    width: 428px;
+    height: 400px;
+    width: 420px;
   }
   .banner-img img {
     margin-left: auto;
   }
+
   .features {
     width: 88%;
   }
@@ -1138,7 +1146,7 @@ footer {
     height: 395px;
     width: 486px;
     margin-right: -10px;
-    padding-top: 8vh;
+    padding-top: 10px;
   }
   .support-means li p {
     margin: 0px 0 0 10px;
@@ -1162,8 +1170,8 @@ footer {
   }
 
   .main-blog .support-info {
-    width: 40%;
-    margin-top: 60px;
+    width: 45%;
+    margin-top: 10px;
   }
 
   .main-blog .support-info p {
@@ -1221,14 +1229,13 @@ footer {
   }
 
   .council-cards {
-    width:70%;
+    width: 70%;
     flex-direction: row;
     margin: 0 auto;
-
   }
 
   .card {
-    min-width: 250px;
+    min-width: 280px;
   }
 
   .card_1,
@@ -1237,7 +1244,7 @@ footer {
   .card_4,
   .card_5 {
     min-width: inherit;
-    height: 250px;
+    height: 230px;
   }
 
   .card-body {
@@ -1326,7 +1333,7 @@ footer {
     margin: 0;
   }
 
-  .connect .share-buttons{
+  .connect .share-buttons {
     margin: 0;
     height: 60px;
     width: 260px;
@@ -1365,7 +1372,9 @@ footer {
     flex-direction: row;
     margin: 0 auto;
   }
-
+  .foot-nav .logo h3 span {
+    margin-left: 4px;
+  }
   .foot-nav .logo .circle {
     width: 55px;
     height: 55px;
