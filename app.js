@@ -1,15 +1,4 @@
-const CloseBtn = document.getElementById("closeBtn");
-const sideNav = document.getElementById("sideMenu");
-const hamburger = document.querySelector(".hamburger");
-const year = document.getElementById("year");
-// toggling  mobile nav.
-hamburger.addEventListener("click", () => {
-  sideNav.style.width = "100%";
-});
 
-CloseBtn.addEventListener("click", () => {
-  sideNav.style.width = "0px";
-});
 
 // switch to counsellors page
 // let gotoGallery = document.getElementById("goto_gallery");
@@ -17,74 +6,7 @@ CloseBtn.addEventListener("click", () => {
 //   window.location.href = "./counsellor/index.html";
 // });
 
-// manual image slide
 
-let cards = document.querySelectorAll(".card");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
-
-// work on setting the left arrow.
-let left = 0;
-next.onclick = () => {
-  left++;
-  // if (left > 0 && left === 2) {
-  //   next.onclick = "null";
-  //   next.style.backgroundImage = "url(./assets/backSwitch.png)";
-  //   next.style.transform = "rotate(-180deg)";
-  // }
-  //   console.log(left);
-
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-600px";
-    }
-    if (left === 3) {
-      card.style.left = "-900px";
-    }
-    if (left === 4) {
-      card.style.left = "-1200px";
-    }
-    if (left === 5) {
-      card.style.left = "-0px";
-    }
-    if (left > 5) {
-      left = 0;
-    }
-  });
-};
-
-// work to do here.
-prev.onclick = () => {
-  left--;
-  // if (left > 0) {
-  //   //  prev.onclick = "null";
-  //   prev.style.backgroundImage = "url(./assets/forwardSwitch.png)";
-  //   prev.style.transform = "rotate(-180deg)";
-  // }
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "0px";
-    }
-    if (left < 0) {
-      left = 0;
-    }
-  });
-};
 
 // switching to flow1 page
 // const buttons = document.querySelectorAll("header button");
@@ -204,15 +126,12 @@ let subscriber = {
 
 subscribe.addEventListener("click", (e) => {
   e.preventDefault();
+  subscriber.first_name = subscriberName.value;
+  subscriber.email = subscriberEmail.value;
   if (subscriberName.value !== "" && subscriberEmail.value !== "") {
-    subscriber.first_name = subscriberName.value;
-    subscriber.email = subscriberEmail;
     error.style.display = "none";
-    subscriberName.value = "";
-    subscriberEmail.value = "";
-
     fetch(url, {
-      method: "post",
+      method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -231,13 +150,10 @@ subscribe.addEventListener("click", (e) => {
   } else {
     error.style.display = "block";
   }
+  subscriberName.value = "";
+  subscriberEmail.value = "";
 });
 
-// let shareBtn = document.querySelectorAll(".share-buttons a img");
-// console.log(shareBtn);
-// shareBtn.forEach((btn) => {
-//   btn.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     console.log(e.currentTarget);
-//   });
-// });
+// selecting images
+
+

@@ -683,6 +683,34 @@ img {
   animation: appear 1s linear;
 }
 
+/* image dots */
+
+.dots {
+  width: 15%;
+  margin: 0px auto;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.dots span {
+  background-color: white;
+  border: 2px solid var(--pry-color);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+span.active_dot {
+  background-color:var(--pry-color);
+  border:none;
+  
+}
+
 /* switch btn */
 .switch,
 .switch_goto {
@@ -763,7 +791,9 @@ img {
 }
 
 .sponsor span {
-  width: 20%;
+  width: 80px;
+  display: block;
+  margin-right: 10px;
   height: inherit;
   float: left;
   background-size: contain;
@@ -1272,6 +1302,9 @@ footer {
   .supporters {
     width: 800px;
     margin: 0 auto;
+  }
+  .sponsor span {
+    width: 10%;
   }
 
   /* subscibe */

@@ -112,11 +112,10 @@
   display: none;
 }
 
-#text-err{
+#text-err {
   margin-top: -50px;
   margin-bottom: 30px;
 }
-
 
 .contact-left {
   padding-top: 16px;
@@ -137,6 +136,9 @@
   font-size: 2.2rem;
 }
 
+.dots {
+  width: 80%;
+}
 
 @media (max-width: 567px) {
   .core-features {
@@ -186,5 +188,9 @@
   }
   .message-form > .input-group > label {
     padding-bottom: 10px;
+  }
+
+  .dots {
+    width: 30%;
   }
 }

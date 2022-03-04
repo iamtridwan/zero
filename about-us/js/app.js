@@ -1,15 +1,3 @@
-const CloseBtn = document.getElementById("closeBtn");
-const sideNav = document.getElementById("sideMenu");
-const hamburger = document.querySelector(".hamburger");
-const year = document.getElementById("year");
-// toggling  mobile nav.
-hamburger.addEventListener("click", () => {
-  sideNav.style.width = "100%";
-});
-
-CloseBtn.addEventListener("click", () => {
-  sideNav.style.width = "0px";
-});
 
 // switch to counsellors page
 // let gotoGallery = document.getElementById("goto_gallery");
@@ -17,97 +5,7 @@ CloseBtn.addEventListener("click", () => {
 //   window.location.href = "../gallery/gallery.html";
 // });
 
-// manual image slide
-let cards = document.querySelectorAll(".card");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
-// work on setting the left arrow.
-let left = 0;
-next.onclick = () => {
-  left++;
-  // if (left > 0 && left === 2) {
-  //   next.onclick = "null";
-  //   next.style.backgroundImage = "url(./assets/backSwitch.png)";
-  //   next.style.transform = "rotate(-180deg)";
-  // }
-  //   console.log(left);
 
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-600px";
-    }
-    if (left === 3) {
-      card.style.left = "-900px";
-    }
-    if (left === 4) {
-      card.style.left = "-1200px";
-    }
-    if (left === 5) {
-      card.style.left = "-1500px";
-    }
-    if (left === 6) {
-      card.style.left = "-1800px";
-    }
-    if (left === 7) {
-      card.style.left = "-2100px";
-    }
-    if (left === 8) {
-      card.style.left = "-2400px";
-    }
-    if (left === 9) {
-      card.style.left = "-2700px";
-    }
-    if (left === 10) {
-      card.style.left = "-3000px";
-    }
-    if (left > 10) {
-      left = 0;
-      card.style.left = "0px";
-    }
-  });
-};
-
-// work to do here.
-prev.onclick = () => {
-  left--;
-  if (left > 0) {
-    //  prev.onclick = "null";
-    prev.style.backgroundImage = "url(../assets/forwardSwitch.png)";
-    prev.style.transform = "rotate(-180deg)";
-  }
-  cards.forEach((card) => {
-    if (left === 0) {
-      card.style.left = "-0px";
-    }
-    if (left === 1) {
-      card.style.left = "-300px";
-    }
-    if (left === 2) {
-      card.style.left = "-620px";
-    }
-    if (left === 3) {
-      card.style.left = "-920px";
-    }
-    if (left === 4) {
-      card.style.left = "-1200px";
-    }
-    if (left === 5) {
-      card.style.left = "-1400px";
-    }
-    if (left === 6) {
-      card.style.left = "0px";
-    }
-    if (left < 0) {
-      left = 0;
-    }
-  });
-};
 
 let date = new Date();
 year.textContent = date.getFullYear();

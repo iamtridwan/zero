@@ -4,13 +4,11 @@
   background-size: cover;
   background-position: 50% 50px;
   background-repeat: no-repeat;
-
 }
 
 /** About contents*/
-#about-contents{
-  margin-top: 30px ;
- 
+#about-contents {
+  margin-top: 30px;
 }
 #about-contents p {
   font-size: 17px;
@@ -41,9 +39,16 @@ strong {
   border-radius: 4.5625rem;
 }
 
-.banner-intro{
+.banner-intro {
   margin-bottom: 0;
 }
+
+/* dots */
+.dots {
+  width: 80%;
+}
+
+
 
 @media screen and (min-width: 1024px) {
   .about-left,
@@ -55,6 +60,9 @@ strong {
     background-size: contain;
     background-position: center;
   }
+  .dots {
+  width: 30%;
+}
 }
 
 @media (min-width: 1024px) {
