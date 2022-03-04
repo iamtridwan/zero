@@ -7,8 +7,7 @@
 
 
 
-let date = new Date();
-year.textContent = date.getFullYear();
+
 
 //animations
 let elements = document.querySelectorAll(".hidden");

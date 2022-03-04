@@ -427,9 +427,9 @@ ul {
   height: 5%;
 }
 
-.animate {
+/* .animate {
   animation: slideInbottom 0.95s ease-in;
-}
+} */
 
 .support-means {
   margin-top: 20px;
@@ -706,9 +706,8 @@ img {
 }
 
 span.active_dot {
-  background-color:var(--pry-color);
-  border:none;
-  
+  background-color: var(--pry-color);
+  border: none;
 }
 
 /* switch btn */
@@ -1019,9 +1018,9 @@ footer {
   margin: auto;
 }
 /* hide animatable elements */
-.hidden {
+/* .hidden {
   opacity: 0;
-}
+} */
 
 /* media query */
 

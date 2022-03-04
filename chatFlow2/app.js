@@ -1,15 +1,4 @@
-const CloseBtn = document.getElementById("closeBtn");
-const sideNav = document.getElementById("sideMenu");
-const hamburger = document.querySelector(".hamburger");
-const year = document.getElementById("year");
-// toggling  mobile nav.
-hamburger.addEventListener("click", () => {
-  sideNav.style.width = "100%";
-});
 
-CloseBtn.addEventListener("click", () => {
-  sideNav.style.width = "0px";
-});
 
 // switching to flow1 page
 const buttons = document.querySelectorAll("header button");
@@ -40,8 +29,7 @@ endChat.addEventListener("click", () => {
     behavior: "smooth",
   });
   popUp.style.display = "flex";
-  //   console.log(window.innerHeight);
-  //   popUp.style.height = `${window.innerHeight}px`;
+
 });
 
 popUp.addEventListener("click", (e) => {

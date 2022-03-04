@@ -37,7 +37,6 @@ next.onclick = () => {
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
-      
     }
     if (left === 1) {
       card.style.left = "-340px";
@@ -136,3 +135,6 @@ const setTargetDot = (target) => {
   target.classList.add("active_dot");
 };
 
+// setting date dynmically for footer
+let date = new Date();
+year.textContent = date.getFullYear();
