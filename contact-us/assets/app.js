@@ -19,8 +19,8 @@
 
 
 //animations
-let elements = document.querySelectorAll(".hidden");
-let windowHeight = window.innerHeight;
+// let elements = document.querySelectorAll(".hidden");
+// let windowHeight = window.innerHeight;
 
 // function checkPosition() {
 //   for (let i = 0; i < elements.length; i++) {

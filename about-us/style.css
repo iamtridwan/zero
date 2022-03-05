@@ -48,8 +48,6 @@ strong {
   width: 80%;
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .about-left,
   .about-right {
@@ -61,8 +59,8 @@ strong {
     background-position: center;
   }
   .dots {
-  width: 30%;
-}
+    width: 30%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -72,8 +70,5 @@ strong {
 
   #dep {
     font-weight: 400;
-  }
-  .card {
-    min-width: 300px;
   }
 }

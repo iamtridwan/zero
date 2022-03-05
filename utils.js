@@ -37,40 +37,52 @@ next.onclick = () => {
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
+      changeDot(left);
     }
     if (left === 1) {
       card.style.left = "-340px";
+      changeDot(left);
     }
     if (left === 2) {
       card.style.left = "-680px";
+      changeDot(left);
     }
     if (left === 3) {
       card.style.left = "-1020px";
+      changeDot(left);
     }
     if (left === 4) {
       card.style.left = "-1360px";
+      changeDot(left);
     }
     if (left === 5) {
       card.style.left = "-1700px";
+      changeDot(left);
     }
     if (left === 6) {
       card.style.left = "-2040px";
+      changeDot(left);
     }
     if (left === 7) {
       card.style.left = "-2380px";
+      changeDot(left);
     }
     if (left === 8) {
       card.style.left = "-2720px";
+      changeDot(left);
     }
     if (left === 9) {
       card.style.left = "-3060px";
+      changeDot(left);
     }
     if (left === 10) {
       card.style.left = "-3400px";
+      changeDot(left);
     }
     if (left > 10) {
       left = 0;
       card.style.left = "0px";
+      changeDot(left);
     }
   });
 };
@@ -86,40 +98,52 @@ prev.onclick = () => {
   cards.forEach((card) => {
     if (left === 0) {
       card.style.left = "-0px";
+      changeDot(left);
     }
     if (left === 1) {
       card.style.left = "-340px";
+      changeDot(left);
     }
     if (left === 2) {
       card.style.left = "-680px";
+      changeDot(left);
     }
     if (left === 3) {
       card.style.left = "-1020px";
+      changeDot(left);
     }
     if (left === 4) {
       card.style.left = "-1360px";
+      changeDot(left);
     }
     if (left === 5) {
       card.style.left = "-1700px";
+      changeDot(left);
     }
     if (left === 6) {
       card.style.left = "-2040px";
+      changeDot(left);
     }
     if (left === 7) {
       card.style.left = "-2380px";
+      changeDot(left);
     }
     if (left === 8) {
       card.style.left = "-2720px";
+      changeDot(left);
     }
     if (left === 9) {
       card.style.left = "-3060px";
+      changeDot(left);
     }
     if (left === 10) {
       card.style.left = "-3400px";
+      changeDot(left);
     }
     if (left > 10) {
       left = 0;
       card.style.left = "0px";
+      changeDot(left);
     }
     if (left < 0) {
       left = 0;
@@ -127,6 +151,7 @@ prev.onclick = () => {
   });
 };
 
+// set active-link on dot onclick
 const setTargetDot = (target) => {
   let dots = document.querySelectorAll(".dots span");
   dots.forEach((dot) => {
@@ -135,6 +160,19 @@ const setTargetDot = (target) => {
   target.classList.add("active_dot");
 };
 
+// change dot pos as image slides
+const changeDot = (pos) => {
+  dots.forEach((dot, index) => {
+    dot.classList.remove("active_dot");
+    if (index === pos) {
+      dot.classList.add("active_dot");
+    }
+  });
+};
+
+// toggle img with dots
+
+const imgs = document.querySelectorAll(".card img");
 // setting date dynmically for footer
 let date = new Date();
 year.textContent = date.getFullYear();
