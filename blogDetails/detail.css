@@ -1,13 +1,19 @@
-body{
-    background-color:#F6F8FB;
+body {
+  background-color: #f6f8fb;
 }
 
-.post-article p, .story_info p{
+.post-article p,
+.story_info p {
   opacity: 0.6;
 }
 
-.timeline p{
-  opacity:  1;
+.story_info ul {
+  display: block;
+  padding: 0;
+}
+
+.timeline p {
+  opacity: 1;
 }
 
 .hero {
@@ -106,12 +112,12 @@ body{
 }
 
 /* form */
-form{
+form {
   width: 100%;
   margin: 20px 0 40px 0;
   display: none;
 }
-textarea{
+textarea {
   border: 1px solid #02073e;
   color: #02073e;
   border-radius: 10px;
@@ -120,15 +126,14 @@ textarea{
   text-align: left;
   margin: 10px 0;
   display: block;
-  
 }
 
-input{
+input {
   width: 50%;
   display: block;
   padding: 10px;
   background-color: #ffa500;
-  color: #F6F8FB;
+  color: #f6f8fb;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -178,8 +183,7 @@ input{
   .other-post {
     width: 70%;
   }
-  form{
-  width: 30%;
-
-}
+  form {
+    width: 30%;
+  }
 }
