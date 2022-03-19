@@ -1,12 +1,8 @@
-
-
 // switch to counsellors page
 // let gotoGallery = document.getElementById("goto_gallery");
 // gotoGallery.addEventListener("click", () => {
 //   window.location.href = "./counsellor/index.html";
 // });
-
-
 
 // switching to flow1 page
 // const buttons = document.querySelectorAll("header button");
@@ -21,8 +17,6 @@
 // footerBtn.addEventListener("click", () => {
 //   window.location.href = "./chatFlow1/index.html";
 // });
-
-
 
 //animations
 // let elements = document.querySelectorAll(".hidden");
@@ -50,15 +44,13 @@
 const avatars = document.querySelectorAll(".avatar");
 let mainComment = document.querySelector(".main-comment h2");
 const comments = [
+  "I'm glad that I was able to bare out my mind without feeling like a bad person",
+
   "I came to the platform with a heavy heart, but the councellors are \
     caring and loving, i dismissed my suicide though at once, Thank you \
     ZeroDepression Team",
 
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. \
-  Voluptates sequi eius reprehenderit similique \
-  exercitationem error dolor fugit voluptatum deleniti ex.",
-
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Esse facilis quidem similique alias molestias aperiam.",
+  "Giving birth to new child was sort of overwhelming for me but talking to a counsellor here gave me a bit of relief.",
 ];
 
 avatars.forEach((avatar) => {
@@ -153,5 +145,3 @@ subscribe.addEventListener("click", (e) => {
 });
 
 // selecting images
-
-

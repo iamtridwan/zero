@@ -33,6 +33,11 @@ body {
   border: 200px;
   background-color: unset;
 }
+
+.card {
+  min-width: unset;
+}
+
 .card-body {
   margin-top: 0;
   background: white;
