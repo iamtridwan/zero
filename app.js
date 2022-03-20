@@ -94,7 +94,7 @@ function switchComments() {
       }
     }),
       count++;
-  }, 2500);
+  }, 8000);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
