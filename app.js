@@ -145,3 +145,31 @@ subscribe.addEventListener("click", (e) => {
 });
 
 // selecting images
+
+// animations
+
+// gsap.to("#zero", { duration: 1, x: 0, opacity: 1, ease: "bounce" });
+// gsap.to("#dep", { duration: 1, opacity: 1, ease: "elastic", delay: 1 });
+// gsap.to(".banner-intro p", {
+//   duration: 1,
+//   opacity: 0.8,
+//   y: 0,
+//   delay: 1,
+// });
+
+// gsap.to(".banner-intro button", {
+//   duration: 1,
+//   opacity: 1,
+//   y: 0,
+//   delay: 1,
+//   autoAlpha: 0.5,
+//   yoyo: true,
+//   repeat: -1,
+// });
+// gsap.to(".banner-img", {
+//   duration: 1,
+//   opacity: 1,
+//   delay: 2,
+//   scale: 1,
+//   ease: "power-out",
+// });
