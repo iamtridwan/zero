@@ -37,6 +37,17 @@ body {
 .card {
   min-width: unset;
 }
+.card_3 img,
+.card_2 img,
+.card_1 img {
+  object-fit: cover;
+}
+
+.card_3,
+.card_1,
+.card_2 {
+  height: 200px;
+}
 
 .card-body {
   margin-top: 0;
