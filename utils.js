@@ -79,7 +79,31 @@ next.onclick = () => {
       card.style.left = "-3400px";
       changeDot(left);
     }
-    if (left > 10) {
+    if (left === 11) {
+      card.style.left = "-3740px";
+      changeDot(left);
+    }
+    if (left === 12) {
+      card.style.left = "-4080px";
+      changeDot(left);
+    }
+    if (left === 13) {
+      card.style.left = "-4420px";
+      changeDot(left);
+    }
+    if (left === 14) {
+      card.style.left = "-4760px";
+      changeDot(left);
+    }
+    if (left === 15) {
+      card.style.left = "-5100px";
+      changeDot(left);
+    }
+    if (left === 16) {
+      card.style.left = "-5440px";
+      changeDot(left);
+    }
+    if (left > 16) {
       left = 0;
       card.style.left = "0px";
       changeDot(left);
@@ -140,13 +164,34 @@ prev.onclick = () => {
       card.style.left = "-3400px";
       changeDot(left);
     }
-    if (left > 10) {
+    if (left === 11) {
+      card.style.left = "-3740px";
+      changeDot(left);
+    }
+    if (left === 12) {
+      card.style.left = "-4080px";
+      changeDot(left);
+    }
+    if (left === 13) {
+      card.style.left = "-4420px";
+      changeDot(left);
+    }
+    if (left === 14) {
+      card.style.left = "-4760px";
+      changeDot(left);
+    }
+    if (left === 15) {
+      card.style.left = "-5100px";
+      changeDot(left);
+    }
+    if (left === 16) {
+      card.style.left = "-5440px";
+      changeDot(left);
+    }
+    if (left > 16) {
       left = 0;
       card.style.left = "0px";
       changeDot(left);
-    }
-    if (left < 0) {
-      left = 0;
     }
   });
 };
