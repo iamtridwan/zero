@@ -1,12 +1,8 @@
-
-
 // switch to counsellors page
 // let gotoGallery = document.getElementById("goto_gallery");
 // gotoGallery.addEventListener("click", () => {
 //   window.location.href = "../gallery/gallery.html";
 // });
-
-
 
 // switching to flow1 page
 // const footerBtn = document.querySelector(".connect button");
@@ -16,7 +12,6 @@
 // });
 
 // setting date dynmically for footer
-
 
 //animations
 // let elements = document.querySelectorAll(".hidden");
@@ -40,7 +35,7 @@
 
 // switching users
 
-const user = document.querySelector('.users')
+const user = document.querySelector(".users");
 const avatars = document.querySelectorAll(".avatar");
 let mainComment = document.querySelector(".main-comment h2");
 const comments = [
@@ -94,43 +89,55 @@ const contactName = document.getElementById("name");
 const contactEmail = document.getElementById("email");
 const contribution = document.getElementById("contribution");
 const contactBtn = document.getElementById("contact-btn");
-const url = "https://api.zerodepression.org/v1/ge/contact-us";
+const url = "https://api1.zerodepression.org/api/v1/ge/contact-us";
 
 contactBtn.addEventListener("click", () => {
-  let formElems = [contactName, contactEmail, contribution];
+  const errors = document.querySelectorAll(".error");
+  const h3 = document.querySelector(".contact-left h3");
   const contactForm = {
-    name: "",
-    email: "",
-    contribution: "",
+    name: contactName.value,
+    email: contactEmail.value,
+    contribution: contribution.value,
   };
 
-  formElems.forEach((elem, idx) => {
-    if (validateFormElem(elem) && idx === 0) {
-      contactForm.name = elem.value;
-      elem.value = "";
-    } else if (validateFormElem(elem) && idx === 1) {
-      contactForm.email = elem.value;
-      elem.value = "";
-    } else if (validateFormElem(elem) && idx === 2) {
-      contactForm.contribution = elem.value;
-      elem.value = "";
-    }
-  });
-
-  fetch(url, {
-    method: "post",
-    headers: {
-      Accept: "applicaton/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(contactForm),
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data));
+  if (contactForm.name && contactForm.email && contactForm.contribution) {
+    fetch(url, {
+      method: "POST",
+      headers: {
+        Accept: "applicaton/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(contactForm),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+    contactName.value = "";
+    contactEmail.value = "";
+    contribution.value = "";
+    errors.forEach((error) => (error.style.display = "none"));
+    setTimeout(() => {
+      h3.style.display = "block";
+    }, 800);
+    setTimeout(() => {
+      h3.style.display = "none";
+    });
+  } else {
+    errors.forEach((error, idx) => {
+      if (contactName.value === "" && idx === 0) {
+        error.style.display = "block";
+      }
+      if (contactEmail.value === "" && idx === 1) {
+        error.style.display = "block";
+      }
+      if (contribution.value === "" && idx === 2) {
+        error.style.display = "block";
+      }
+    });
+  }
 });
 
 // submitting subscribe form
-const subUrl = "https://api.zerodepression.org/v1/ge/newsletter";
+const subUrl = "https://api1.zerodepression.org/v1/ge/newsletter";
 
 const subscriberName = document.getElementById("name");
 const subscriberEmail = document.getElementById("email");

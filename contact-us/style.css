@@ -25,7 +25,7 @@
   font-size: 20px;
   line-height: 55px;
   /* identical to box height, or 183% */
-  margin: -10px 0 0 0;
+  margin: -30px 0 0 0;
   display: flex;
   align-items: center;
   text-align: left;
@@ -39,7 +39,8 @@
 }
 
 .message-form > button {
-  margin-bottom: 87px;
+  margin-bottom: 10px;
+  margin-top: 16px;
   cursor: pointer;
   width: 263px;
   height: 65px;
@@ -96,7 +97,7 @@
   line-height: 30px;
   color: #ffffff;
   padding: 20px 0 0 25px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   width: 100%;
   height: 183px;
   background: rgba(255, 165, 0, 0.5);
@@ -112,6 +113,12 @@
   display: none;
 }
 
+.contact-left h3 {
+  color: green;
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
 #text-err {
   margin-top: -50px;
   margin-bottom: 30px;
@@ -192,5 +199,9 @@
 
   .dots {
     width: 30%;
+  }
+  .contact-left h3 {
+    text-align: left;
+    font-size: 2rem;
   }
 }
