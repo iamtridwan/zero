@@ -87,6 +87,7 @@ a {
 header {
   background-color: var(--topBg);
   width: 100%;
+  padding-bottom: 15px;
 }
 
 /* nav */
@@ -167,7 +168,6 @@ ul {
   height: 100%;
   position: relative;
   z-index: 5;
-
 }
 .banner-img::after {
   content: "";
@@ -218,7 +218,6 @@ ul {
   font-size: 16px;
   border: none;
   cursor: pointer;
-
 }
 
 .banner-intro button:hover {
@@ -541,11 +540,11 @@ h4 {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
   color: #0f2137;
-  text-align: center;
+  text-align: left;
   margin: 0;
   opacity: 0.8;
 }
@@ -1125,8 +1124,9 @@ footer {
 
   .banner-intro p {
     width: 80%;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
+    opacity:0.8;
     /* line-height: 48px; */
     margin: 10px 0;
   }
@@ -1257,7 +1257,8 @@ footer {
   }
 
   .main-comment h2 {
-    line-height: 45px;
+    line-height: 35px;
+      text-align: center;
   }
 
   .users {
